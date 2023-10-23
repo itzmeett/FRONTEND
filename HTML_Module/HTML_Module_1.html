@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.1_Module</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>1.1 Are the HTML tags and elements the same thing?</h1>
+
+        </legend>
+        <br />
+        <ul>
+            <li>No, HTML tag and elements are not same thing they are different.</li>
+            <li>
+                HTML elements and tags are a lot different. Let’s see what HTML elements
+                and Tags actually are and their differences. The below image tells about
+                HTML Elements and HTML Tags.
+            </li>
+        </ul>
+        <br />
+        <ul>
+            <center>
+                <img src="https://www.devbabu.com/wp-content/uploads/html-tag-vs-element.png" alt="" width="600px"
+                    height="280px" />
+            </center>
+        </ul>
+        <br />
+        <hr width="90%" />
+        <br />
+        <fieldset>
+            <legend>
+                <h2>HTML Tag</h2>
+            </legend>
+            <ul>
+                <li>
+                    The starting and ending point parts of an HTML document are HTML Tags,
+                    which start with &lt; (less than) and end with &gt; (greater than)
+                    angle bracket, and whatever is written inside the angle brackets are
+                    known as tags.
+                </li>
+                <li>
+                    Both opening and closing tags must be there in order to function.
+                    There are also some self enclosing tags which require only one tag
+                    such as &lt;hr &gt; , &lt;img /&gt;, &lt;br /&gt; etc. The ending
+                    slash over here is optional.
+                </li>
+                <br />
+                <li>
+                    <br />
+                    &lt;tagname&gt; <br />... <br />
+                    &lt;/tagname&gt;
+                </li>
+            </ul>
+        </fieldset>
+        <br /><br>
+        <hr width="90%" />
+        <br />
+        <fieldset>
+            <legend>
+                <h2>HTML Element</h2>
+            </legend>
+            <ul>
+                <li>
+                    Elements in HTML enclose the content in between the tags. It consists
+                    of an expression or a structure. Its architecture consists of a start
+                    tag, content followed by an ending tag.
+                </li>
+                <li>Everything within a HTML Tag is HTML element.</li>
+                <br />
+                <li>
+                    <br />
+                    &lt;tagname&gt; <br />
+                    This is the content. <br />
+                    &lt;tagname/&gt;
+                </li>
+            </ul>
+        </fieldset>
+    </fieldset>
+    <br />
+    <br /><br /><br /><br />
+    <br />
+    <hr style="height: 3px; background-color: black" width="75%" />
+    <br />
+    <br /><br /><br />
+
+    <fieldset>
+        <legend>
+            <h1>1.2 What are tags and attributes in HTML?</h1>
+        </legend>
+
+        <br />
+        <ul>
+            <li>Tags and attributes are the basis of HTML.</li>
+            <li>
+                They work together but perform different functions.
+            </li>
+        </ul>
+        <br />
+        <center>
+            <table border="1" cellpadding="28px" width="80%">
+                <tr>
+                    <th>HTML Tags</th>
+                    <th>HTML Elements</th>
+                    <th>HTML Attributes</th>
+                </tr>
+                <tr align="center">
+                    <td>HTML tags are used to hold the HTML element.</td>
+                    <td>HTML element holds the content.</td>
+                    <td>
+                        HTML attributes are used to describe the characteristic of an HTML
+                        element in detail.
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>HTML tag starts with &lt; and ends with &gt;</td>
+                    <td>Whatever written within a HTML tag are HTML elements.</td>
+                    <td>HTML attributes are found only in the starting tag.</td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        HTML tags are almost like keywords where every single tag has unique
+                        meaning.
+                    </td>
+                    <td>HTML elements specifies the general content.</td>
+                    <td>
+                        HTML attributes specify various additional properties to the
+                        existing HTML element.
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br />
+        <ul>
+            <hr />
+            <fieldset>
+                <legend>
+                    <h2>HTML Tag</h2>
+                </legend>
+                <ul>
+                    <li>
+                        Tags are used to mark up the start of an HTML element and they are
+                        usually enclosed in angle brackets. An example of a tag is:
+                        &lt;h1&gt;./li>
+                    <li>Most tags must be opened &lt;h1&gt; and closed &lt;h1/&gt; in order to function.</li>
+                    <li>
+                        <br />
+                        &lt;tagname&gt; <br />... <br />
+                        &lt;/tagname&gt;
+                    </li>
+                    </li>
+                </ul>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>
+                    <h2>HTML Elememt</h2>
+                </legend>
+                <ul>
+                    <li>
+                        Attributes contain additional pieces of information. Attributes take the form of an opening tag
+                        and
+                        additional info is placed inside. </li>
+                    <li>An example of an attribute is:</li>
+                    <li>
+                        <br />
+                        &lt;img src="mydog.jpg" alt="A photo of my dog."&gt;
+                    </li>
+                    </li>
+                    <li>In this instance, the image source (src) and the alt text (alt) are attributes of the
+                        &lt;img&gt;
+                        tag.</li>
+                </ul>
+            </fieldset>
+    </fieldset>
+    <br />
+    <br /><br /><br /><br />
+    <br />
+    <hr style="height: 3px; background-color: black" width="75%" />
+    <br />
+    <br /><br /><br />
+    <fieldset>
+        <legend>
+            <h1>1.3 What are void elements in HTML?</h1>
+        </legend>
+        <ul>
+            <p>
+                <li>
+                    Most of the HTML elements are surrounded by start and end tags to
+                    specify the starting and end of the element.
+                </li>
+            </p>
+            <p>
+                <li>
+                    There is a special group of elements that only have start tags and
+                    does not contain any content within it, these elements are called
+                    void elements.
+                </li>
+            </p>
+            <p>
+                <li>
+                    Void elements doesn’t have ending tags and can only have attributes
+                    but do not contain any kind of content.
+                </li>
+            </p>
+            <p>
+                <li>
+                    These elements can have backslash before ending of start tag but
+                    that is completely optional.
+                </li>
+            </p>
+            <p>
+                <li>
+                    Example of such elements are &lt;br&gt;, &lt;hr&gt;, &lt;img&gt;,
+                    &lt;input&gt;, &lt;link&gt;, &lt;base&gt;, &lt;meta&gt;,
+                    &lt;param&gt;, &lt;area&gt;, &lt;embed&gt;, &lt;col&gt;,
+                    &lt;track&gt;, &lt;source&gt; etc.
+                </li>
+            </p>
+        </ul>
+        <ul>
+            <br />
+            <hr width="90%" />
+            <h2>Characteristic</h2>
+
+            <ul type="square">
+                <p>
+                    <li>Void elements do not have end tags.</li>
+                </p>
+                <p>
+                    <li>Void elements cannot have content inside it.</li>
+                </p>
+                <p>
+                    <li>Void elements have attributes.</li>
+                </p>
+                <p>
+                    <li>Void elements cannot be nested.</li>
+                </p>
+            </ul>
+        </ul>
+    </fieldset>
+    <br />
+    <br /><br /><br /><br />
+    <br />
+    <hr style="height: 3px; background-color: black" width="75%" />
+    <br />
+    <br /><br /><br />
+    <fieldset>
+
+        <legend>
+            <h1>1.4 What are HTML Entities?</h1>
+        </legend>
+        <ul>
+            <li>Some characters are reserved in HTML.</li>
+            <li>If you use the less than (&lt;) or greater than (&gt;) signs in your HTML text, the browser might
+                mix
+                them with tags.</li>
+            <li>Entity names or entity numbers can be used to display reserved HTML characters.</li>
+            <li>Entity names look like this:</li>
+            <li>&entity_name;</li>
+            <li>&#entity_number;</li>
+            <li>To display a less than sign (&lt;) we must write: <b>&amp;lt;</b> or <b>&amp;#60;</b></li>
+        </ul>
+
+        <h2>Non-breaking space</h2>
+        <ul>
+            <li>A commonly used HTML entity is the non-breaking space: &nbsp;</li>
+            <li>A non-breaking space is a space that will not break into a new line.</li>
+            <li>Two words separated by a non-breaking space will stick together (not break into a new line). This is
+                handy when breaking the words might be disruptive.</li>
+            <li>If you write 10 spaces in your text, the browser will remove 9 of them. To add real spaces to your
+                text,
+                you can use the <b>&amp;nbsp;</b> character entity.</li>
+        </ul>
+
+        <fieldset>
+            <legend>
+                <h2>Some Useful HTML Character Entities</h2>
+            </legend>
+            <br>
+            <center>
+                <table width="40%" border="1" cellpadding="10px">
+                    <tr>
+                        <th>Result</th>
+                        <th>Description</th>
+                        <th>Name</th>
+                        <th>Number</th>
+                    </tr>
+                    <tr align="center">
+                        <td></td>
+                        <td>non-breaking space</td>
+                        <td>&ampnbsp;</td>
+                        <td>&amp#160;</td>
+                    </tr>
+                    <tr align="center">
+                        <td>&lt;</td>
+                        <td> less than</td>
+                        <td>&amplt;</td>
+                        <td>&amp#60;</td>
+                    </tr>
+                    <tr align="center">
+                        <td>&gt;</td>
+                        <td>greater than</td>
+                        <td>&amplt;</td>
+                        <td>&amp#62;</td>
+                    </tr>
+                    <tr align="center">
+                        <td>&amp;</td>
+                        <td>ampersand</td>
+                        <td>&ampamp;</td>
+                        <td>&amp#38;</td>
+                    </tr>
+                    <tr align="center">
+                        <td>&quot;</td>
+                        <td>double quotation mark</td>
+                        <td>&ampquot;</td>
+                        <td>&amp#34;</td>
+                    </tr>
+                    <tr align="center">
+                        <td>&apos;</td>
+                        <td>single quotation mark</td>
+                        <td>&ampapos;</td>
+                        <td>&amp#39;</td>
+                    </tr>
+                    <tr align="center">
+                        <td>&cent;</td>
+                        <td> cent</td>
+                        <td>&ampcent;</td>
+                        <td>&amp#162;</td>
+                    </tr>
+                    <tr align="center">
+                        <td>&pound;</td>
+                        <td> pound</td>
+                        <td>&amppound;</td>
+                        <td>&amp#163;</td>
+                    </tr>
+                    <tr align="center">
+                        <td>&yen;</td>
+                        <td> yen</td>
+                        <td>&ampyen;</td>
+                        <td>&amp#165;</td>
+                    </tr>
+                    <tr align="center">
+                        <td> &euro;</td>
+                        <td> euro</td>
+                        <td>&ampeuro;</td>
+                        <td>&amp#8364;</td>
+                    </tr>
+                    <tr align="center">
+                        <td> &copy;</td>
+                        <td> copyright</td>
+                        <td>&ampcopy;</td>
+                        <td>&amp#169;</td>
+                    </tr>
+                    <tr align="center">
+                        <td> &reg;</td>
+                        <td> trademark</td>
+                        <td>&ampreg;</td>
+                        <td>&amp#174;</td>
+                    </tr>
+                </table>
+            </center>
+        </fieldset>
+
+    </fieldset>
+    <br />
+    <br /><br /><br /><br />
+    <br />
+    <hr style="height: 3px; background-color: black" width="75%" />
+    <br />
+    <br /><br /><br />
+    <fieldset>
+        <legend>
+            <h1>1.5 What are different types of lists in HTML?</h1>
+        </legend>
+        <ul>
+            <li>
+                HTML lists allow web developers to group a set of related items in
+                lists.
+            </li>
+            <li>There are three types of list :</li>
+            <ol>
+                <li>Unordered List</li>
+                <li>Ordered List</li>
+                <li>Description List</li>
+            </ol>
+        </ul>
+        <fieldset>
+            <legend>
+                <h2>Unordered HTML List</h2>
+            </legend>
+            <ul>
+                <li>
+                    An unordered list starts with the &lt;ul&gt; tag. Each list item
+                    starts with the &lt;li&gt;tag.
+                </li>
+                <li>
+                    The list items will be marked with bullets (small black circles) by
+                    default:
+                </li>
+                <li>Example :
+                    <br>
+                    <br />
+                    <ul>&lt;ul&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Coffee&lt;/li&gt;
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Tea&lt;/li&gt;
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Milk&lt;/li&gt;
+                        <br>&lt;/ul&gt;<br>
+                </li>
+            </ul>
+            <li>Output :
+                <br>
+                <br />
+                <ul type="disc">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ul>
+            </li>
+            </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Ordered HTML List</h2>
+            </legend>
+            <ul>
+                <li>
+                    An ordered list starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt; tag.
+                </li>
+                <li>
+                    The list items will be marked with numbers by default:
+                </li>
+                <li>Example :
+                    <br>
+                    <br />
+                    <ul>
+                        &lt;ol&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Cricket&lt;/li&gt;
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Football&lt;/li&gt;
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Chess&lt;/li&gt;
+                        <br>
+                        &lt;/ol&gt;<br>
+                </li>
+            </ul>
+            <li>Output :
+                <br>
+                <br />
+                <ol>
+                    <li>Cricket</li>
+                    <li>Football</li>
+                    <li>Chess</li>
+                </ol>
+            </li>
+            </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Description HTML List</h2>
+            </legend>
+            <ul>
+                <li>HTML also supports description lists.</li>
+                <li>A description list is a list of terms, with a description of each term.</li>
+                <li>
+                    The &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term (name), and the
+                    &lt;dd&gt; tag describes each term:
+                </li>
+                <li>Example :
+                    <br>
+                    <br />
+                    <ul>
+                        &lt;dl&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;dl&gt;Cricket&lt;/dl&gt;
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;dl&gt;Football&lt;/dl&gt;
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;dl&gt;Chess&lt;/dl&gt;
+                        <br>
+                        &lt;/dl&gt;
+                </li>
+            </ul>
+            <li>Output :
+                <br>
+                <br />
+                <ol>
+                    <li>Cricket</li>
+                    <li>Football</li>
+                    <li>Chess</li>
+                </ol>
+            </li>
+            </li>
+            </ul>
+        </fieldset>
+    </fieldset>
+    <br />
+    <br /><br /><br /><br />
+    <br />
+    <hr style="height: 3px; background-color: black" width="75%" />
+    <br />
+    <br /><br /><br />
+    <fieldset>
+        <legend>
+            <h1>1.6 What is the ‘class’ attribute in HTML?</h1>
+        </legend>
+
+        <ul>
+            <p>
+                <li>
+                    The class attribute specifies one or more classnames for an element.
+                </li>
+            </p>
+            <p>
+                <li>
+                    The class attribute is mostly used to point to a class in a style
+                    sheet. However, it can also be used by a JavaScript (via the HTML
+                    DOM) to make changes to HTML elements with a specified class.
+                </li>
+            </p>
+            <p>
+                <li>
+                    The class attribute is part of the Global Attributes, and can be
+                    used on any HTML element.
+                </li>
+            </p>
+            <p>
+                <li>
+                    Example : <br /><br />
+                    <ol>
+                        <li>
+                            &lt;h1 class="intro">Header 1&lt;/h1&gt; &lt;p&gt;A
+                            paragraph.&lt;/p&gt;
+
+                        </li>
+                        <br>
+                        <li>
+                            &lt;p class="important">Note that this is an important
+                            paragraph.&lt;/br&gt;
+                        </li>
+                </li>
+                </ol>
+            </p>
+        </ul>
+    </fieldset>
+    <br />
+    <br /><br /><br /><br />
+    <br />
+    <hr style="height: 3px; background-color: black" width="75%" />
+    <br />
+    <br /><br /><br />
+    <fieldset>
+        <legend>
+            <h1>
+                1.7 What is the difference between the ‘id’ attribute and the ‘class’
+                attribute of HTML elements?
+            </h1>
+        </legend>
+        <p>
+        <ul>
+            <li>The only difference between them is that “id” is unique in a page and can only apply to at most one
+                element, while “class” selector can apply to multiple elements. </li>
+        </ul>
+        </p>
+
+        <fieldset>
+            <legend>
+                <h2>HTML id Attribute</h2>
+            </legend>
+            <ul>
+                <li>
+                    he id attribute is a unique identifier that is used to specify the
+                    document. It is used by CSS and JavaScript to perform a certain task
+                    for a unique element. In CSS, the id attribute is written using the
+                    # symbol followed by id.
+                </li>
+                <br />
+                <li>
+                    <b>Syntax :</b>
+                    <br /><br />
+                    &lt;element id="id_name"&gt;
+                    <br />
+                    <br />
+
+                    In CSS Stylesheet:
+                    <br />#id_name { <br />// CSS Property <br />
+                    }
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>HTML Class Attribute</h2>
+            </legend>
+            <ul>
+                <li>
+                    The class attribute is used to specify one or more class names for
+                    an HTML element. The class attribute can be used on any HTML
+                    element. The class name can be used by CSS and JavaScript to perform
+                    certain tasks for elements with the specified class name. The class
+                    name in CSS stylesheet using “.” symbol.
+                </li>
+                <br />
+                <li>
+                    <b>Syntax :</b>
+                    <br /><br />
+                    &lt;element class="class_name"&gt;
+                    <br />
+                    <br />
+
+                    In CSS Stylesheet:
+                    <br />#class_name { <br />// CSS Property <br />
+                    }
+                </li>
+            </ul>
+        </fieldset>
+    </fieldset>
+    <br />
+    <br /><br /><br /><br />
+    <br />
+    <hr style="height: 3px; background-color: black" width="75%" />
+    <br />
+    <br /><br /><br />
+    <fieldset>
+        <legend>
+            <h1>1.8 What are the various formatting tags in HTML?</h1>
+        </legend>
+        <ul type="disc">
+            <p>
+                <li>
+                    HTML provides many predefined elements that are used to change the
+                    formatting of text. The formatting can be used to set the text
+                    styles (like – bold, italic, or emphasized, etc.), highlight the
+                    text, make text superscript and subscript, etc.
+                </li>
+            </p>
+            <fieldset>
+                <legend>
+                    <h2>&lt;b&gt; & &lt;strong&gt;</h2>
+                </legend>
+                <ul>
+
+                    <p>
+                        <li>
+                            &lt;b&gt; and &lt;strong&gt; Tags: Both tags are used to make the
+                            text bold. The text content of the tag is shown as important
+                            information on the webpage.
+                        </li>
+                    </p>
+                    <p>
+                        <li>
+                            <b>Syntax :</b>
+                            <br />
+                            <br />
+                            &lt;b&gt; ... &lt;/b&gt;
+                            <br />
+                            &lt;strong&gt; ... &lt;/strong&gt;
+                        </li>
+
+                    </p>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>&lt;i&gt; & &lt;em&gt;</h2>
+                </legend>
+                <ul type="disc">
+                    <p>
+                        <li><i> and &lt;em&gt; Tags: Both tags are used to make the text italic and emphasized. Both the
+                                element have opening and closing tags.</li>
+                    </p>
+
+
+                    <p>
+                        <li>
+                            <b>Syntax :</b>
+                            <br />
+                            <br />
+                            &lt;i&gt; ... &lt;/i&gt;
+                            <br />
+                            &lt;em&gt; ... &lt;/em&gt;
+                        </li>
+                    </p>
+
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>&lt;big&gt; & &lt;small&gt;</h2>
+                </legend>
+                <ul type="disc">
+                    <p>
+                        <li>&lt;small&gt; and &lt;big&gt; Tags: The &lt;small&gt; tag is used to set small font-size
+                            where as &lt;big&gt; tag is used to set big font-size.
+
+
+                            <p>
+                        <li>
+                            <b>Syntax :</b>
+                            <br />
+                            <br />
+                            &lt;big&gt; ... &lt;/big&gt;
+                            <br />
+                            &lt;small&gt; ... &lt;/small&gt;
+                        </li>
+                    </p>
+
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>&lt;sup&gt; & &lt;sub&gt;</h2>
+                </legend>
+                <ul type="disc">
+                    <p>
+                        <li>&lt;sup&gt; and &lt;sub&gt; Tags: The &lt;sup&gt; tag is used to superscript a text whereas
+                            &lt;sub&gt; tag is used to subscript a text.
+
+
+                            <p>
+                        <li>
+                            <b>Syntax :</b>
+                            <br />
+                            <br />
+                            &lt;sup&gt; ... &lt;/sup&gt;
+                            <br />
+                            &lt;sub&gt; ... &lt;/sub&gt;
+                        </li>
+                    </p>
+
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>&lt;ins&gt; & &lt;del&gt;</h2>
+                </legend>
+                <ul type="disc">
+                    <p>
+                        <li> &lt;ins&gt; and &lt;del&gt; Tag: The &lt;ins&gt; tag is used to underline a text marking
+                            the part as inserted or added. It also has an opening and a closing tag. This tag is mainly
+                            used in text in place of deleted text whereas the &lt;del&gt; tag is used to delete the text
+                            it adds a strike line to the text.
+
+
+                            <p>
+                        <li>
+                            <b>Syntax :</b>
+                            <br />
+                            <br />
+                            &lt;ins&gt; ... &lt;/ins&gt;
+                            <br />
+                            &lt;del&gt; ... &lt;/del&gt;
+                        </li>
+                    </p>
+
+            </fieldset>
+
+    </fieldset>
+    <br />
+    <br /><br /><br /><br />
+    <br />
+    <hr style="height: 3px; background-color: black" width="75%" />
+    <br />
+    <br /><br /><br />
+    <fieldset>
+        <legend>
+            <h1> How is Cell Padding different from Cell Spacing? </h1>
+        </legend>
+        <fieldset>
+            <legend>
+                <h2>Cell Padding</h2>
+            </legend>
+            <ul>
+
+                <li>Cellpadding specifies the space between the border of a table cell and its contents (i.e) it defines
+                    the whitespace between the cell edge and the content of the cell.</li>
+                <li>It specifies the space between the border of a table cell and its contents.</li>
+                <li>It is created by using HTML &lt;table&gt; tag but type attribute is set to cellpadding.</li>
+                <li>It is mainly meant for a single cell.</li>
+                <li>The default cellpadding value is 1 </li>
+                <li>Cellpadding is widely used and considered to be an effective mean</li>
+                <li>Cellpadding is an attribute</li>
+            </ul>
+            <ul>
+
+                <li>
+                    <b>Syntax :</b>
+                    <br />
+                    <br />
+                    &lt;table cellpadding="value" &gt;.....&lt;/table&gt;<br>
+                    where, value determines the padding <br>
+                    (space between the border of a table and its content)
+                </li>
+            </ul>
+
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Cell Spacing</h2>
+            </legend>
+            <ul>
+                <li>Cellspacing specifies the space between cells (i.e) it defines the whitespace between the edges of
+                    the adjacent cells.</li>
+                <li>It specifies the space between adjacent cells</li>
+                <li>It is also created by using HTML &lt;table&gt; tag but type attribute is set to cellspacing.</li>
+                <li>Cellspacing can get subjected to more than one cell.
+                <li>Whereas, the default cellspacing value is 2</li>
+                <li>Cellspacing is less effective than Cellpadding.</li>
+                <li>Cellspacing is also an attribute.</li>
+                </li>
+                <br>
+                <li>
+                    <b>Syntax :</b>
+                    <br />
+                    <br />
+                    &lt;table cellspaceing="value" &gt;.....&lt;/table&gt;<br>
+                    where, value determines the padding <br>
+                    (space between the border of a table and its content)
+                </li>
+            </ul>
+            </ul>
+
+        </fieldset>
+    </fieldset>
+    <br />
+    <br /><br /><br /><br />
+    <br />
+    <hr style="height: 3px; background-color: black" width="75%" />
+    <br />
+    <br /><br /><br />
+    <fieldset>
+        <legend>
+            <h1>
+                1.10 How can we club two or more rows or columns into a single row or
+                column in an HTML table?
+            </h1>
+        </legend>
+        <ul>
+            <p>
+                <li>The purpose of this Example is to merge table cells in HTML.</li>
+            </p>
+            <p>
+                <li>
+                    It can be done by using the rowspan and colspan attribute in HTML.
+                </li>
+            </p>
+            <p>
+                <li>
+                    The <b>rowspan</b> is used to merge or combine the number of cells
+                    in a row whereas the <b>colspan</b> is used to merge column cells in
+                    a table.
+                </li>
+            </p>
+        </ul>
+        <fieldset>
+            <legend>
+                <h2>Example of &lt;rowspan&gt;</h2>
+            </legend>
+            <table border="1" cellpadding="10px" width="40%">
+                <tr>
+                    <th>Team</th>
+                    <th>Captain</th>
+                </tr>
+                <tr>
+                    <td>India</td>
+                    <td rowspan="2">Rohit Sharma</td>
+                </tr>
+                <tr>
+                    <td>Mumbai Indians</td>
+                </tr>
+                <tr>
+                    <td>Australia</td>
+                    <td>Pat Cummins</td>
+                </tr>
+                <tr>
+                    <td>England</td>
+                    <td rowspan="2">Jos Buttler</td>
+                </tr>
+                <tr>
+                    <td>Rajashtan Royals</td>
+                </tr>
+                <tr>
+                    <td>Newzeland</td>
+                    <td>Kane Williamson</td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Example of &lt;colspan&gt;</h2>
+            </legend>
+            <table border="1" cellpadding="10px" width="40%">
+                <tr>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Marks/100</th>
+                </tr>
+                <tr>
+                    <td>Meet Patel</td>
+                    <td>HTML</td>
+                    <td>88</td>
+                </tr>
+                <tr>
+                    <td>Mayur Mori</td>
+                    <td>HTML</td>
+                    <td>98</td>
+                </tr>
+                <tr>
+                    <td colspan="2">TOTAL</td>
+                    <td>186</td>
+                </tr>
+            </table>
+        </fieldset>
+    </fieldset>
+    <br />
+    <br /><br /><br /><br />
+    <br />
+    <hr style="height: 3px; background-color: black" width="75%" />
+    <br />
+    <br /><br /><br />
+    <fieldset>
+        <legend>
+            <h1>
+                1.11 What is the difference between a block-level element and an
+                inline element?
+            </h1>
+        </legend>
+        <ul>
+            <p>
+                <li>
+                    The inline and block elements of HTML are one of the important areas
+                    where web developers often get confused because they were unable to
+                    know which are inline and block elements which may cause clumsiness
+                    in a webpage in case he assumes some element to be a block but it is
+                    an inline element which causes next element comes next to it.
+                </li>
+            </p>
+            <p>
+                <li>
+                    So let us see the differences between the inline and block elements
+                    in HTML and the different frequently used inline and block HTML
+                    elements.
+                </li>
+            </p>
+            <p>
+                <li type="none">
+                    <center>
+                        <img src="https://i0.wp.com/puntadewa.my.id/wp-content/uploads/2020/03/contoh-block-dan-inline.jpg?resize=768%2C924&ssl=1"
+                            alt="" width="480px" height="530px" />
+                    </center>
+                </li>
+            </p>
+        </ul>
+        <hr width="90%">
+        <br>
+
+        <fieldset>
+            <legend>
+                <h2>Block-Level Elements</h2>
+            </legend>
+            <ul>
+                <li>
+                    &lt;h1&gt;-&lt;h6&gt; : This element is used for including headings
+                    of different sizes ranging from 1 to 6.
+                </li>
+                <li>
+                    &lt;div&gt;: This is a container tag and is used to make separate
+                    divisions of content on the web page.
+                </li>
+                <li>
+                    &lt;hr&gt;: This is an empty tag and is used for separating content
+                    by horizontal lines.
+                </li>
+                <li>
+                    &lt;li&gt;: This tag is used for including list items of an ordered
+                    or unordered list.
+                </li>
+                <li>&lt;ul&gt;: This tag is used to make an unordered list.</li>
+                <li>&lt;ol&gt;: This tag is used to make an ordered list.</li>
+                <li>
+                    &lt;p&gt;: This tag is used to include paragraphs of content in the
+                    webpage.
+                </li>
+                <li>
+                    &lt;table&gt;: This tag is used for including the tables in the
+                    webpage when there is a need for tabular data.
+                </li>
+                <br />
+                <li>
+                    HTML5 Sementic tags are also considered as a Block-Level Element
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Inline Elements</h2>
+            </legend>
+            <ul>
+                <li>&lt;a&gt;: This tag is used for including hyperlinks in the webpage.</li>
+                <li>&lt;br&gt;: This tag is used for mentioning line breaks in the webpage wherever needed.</li>
+
+                <li>&lt;script&gt; : This tag is used for including external and internal JavaScript codes.</li>
+
+                <li>&lt;input&gt;: This tag is used for taking input from the users and is mainly used in forms.</li>
+                <li>&lt;img&gt;: This tag is used for including different images in the webpage to add beauty to the
+                    webpage.
+                </li>
+                <li>&lt;span&gt;: This is an inline container that takes necessary space only.</li>
+                <li>&lt;b&gt;: This tag is used in places where bold text is needed.</li>
+                <li>&lt;label&gt;: The tag in HTML is used to provide a usability improvement for mouse users i.e, if a
+                    user
+                    clicks on the text within the &lt;label&gt; element, it toggles the control.</li>
+            </ul>
+        </fieldset>
+        <br />
+        <br /><br /><br /><br />
+        <br />
+        <hr style="height: 3px; background-color: black" width="75%" />
+        <br />
+        <br /><br /><br />
+        <fieldset>
+            <legend>
+                <h1>1.12 How to create a Hyperlink in HTML? </h1>
+            </legend>
+            <ul>
+                <p>
+                    <li>HTML links are hyperlinks.</li>
+                </p>
+                <p>
+                    <li>You can click on a link and jump to another document.</li>
+                </p>
+                <p>
+                    <li>When you move the mouse over a link, the mouse arrow will turn into a little hand.</li>
+                </p>
+                <p>
+                    <li>The HTML <strong>&lt;a&gt;</strong> tag defines a hyperlink.
+                    </li>
+                    <br>
+                <ul>
+                    <li type="none">
+                        It has the following syntax : <strong> &lt;a href="url"&gt;link text&lt;/a&gt; </strong>
+                    </li>
+                    <li type="none">
+                        <strong>href : </strong>The href attribute is used to specify the destination address
+                        of the link used. "href" stands for Hypertext reference.
+                        <br>
+                    </li>
+                    <li type="none"><strong>Text link : </strong>The text link is the visible part of the link.
+                        It is what the viewer clicks on.
+                    </li>
+
+                </ul>
+
+                </p>
+                <p>
+                    <li>The most important attribute of the <a> element is the href attribute, which indicates the
+                            link's
+                            destination.</li>
+                </p>
+                <p>
+                    <li>The link text is the part that will be visible to the reader.</li>
+                </p>
+                <p>
+                    <li>Clicking on the link text, will send the reader to the specified URL address.</li>
+                </p>
+                <p>
+                    <li>Different types of links appear in different formats such as:
+                        <ol>
+                            <br>
+                            <li>An unvisited link appears underlined and blue in colour by default.</li>
+                            <li>A visited link appears underlined and purple in colour by default.
+                            <li>An active link appears underlined and red in colour by default.</li>
+                    </li>
+                    </ol>
+                    </li>
+                </p>
+                <p>
+                    <li>Example :
+                        <a href="https://www.tops-int.com/">Visit Tops Technologies</a>
+                    </li>
+                </p>
+
+            </ul>
+
+        </fieldset>
+        <br />
+        <br /><br /><br /><br />
+        <br />
+        <hr style="height: 3px; background-color: black" width="75%" />
+        <br />
+        <br /><br /><br />
+        <fieldset>
+            <legend>
+                <h1>1.13 What is the use of an iframe tag?</h1>
+            </legend>
+            <ul>
+                <p>
+                    <li>The iframe in HTML stands for Inline Frame.</li>
+                    <li>
+                        The ” iframe ” tag defines a rectangular region within the document
+                        in which the browser can display a separate document, including
+                        scrollbars and borders.
+                    </li>
+                    <li>
+                        An inline frame is used to embed another document within the current
+                        HTML document.
+                    </li>
+                    <li>
+                        The HTML iframe name attribute is used to specify a reference for an
+                        &lt;iframe&gt; element.
+                    </li>
+                    <li>
+                        The name attribute is also used as a reference to the elements in
+                        JavaScript.
+                    </li>
+                    <li>
+                        The iframe is basically used to show a webpage inside the current
+                        web page.
+                    </li>
+                    <li>
+                        The ‘ src ‘ attribute is used to specify the URL of the document
+                        that occupies the iframe.
+                    </li>
+                    <br />
+                    <li>
+                        <strong>Syntax :</strong> <br /><br />
+                        <strong>&lt;iframe src="URL"
+                            title="description"&gt;&lt;/iframe&gt;</strong>
+                    </li>
+                    <br />
+                    <li>
+                        There are two types of URL links which are listed below :
+                        <br /><br />
+                        <ul type="disc">
+                            <li>
+                                <strong>Absolute URL: </strong> It points to another webpage.
+                            </li>
+                            <li>
+                                <strong>Relative URL: </strong> It points to other files of the
+                                same web page
+                            </li>
+                        </ul>
+                        <br>
+                        <br>
+                </p>
+            </ul>
+            <hr width="90%">
+            <br>
+            <fieldset>
+                <legend>
+                    <h2>Example</h2>
+                </legend>
+                <li type="none">
+                    <h3>Code : </h3>
+                </li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;iframe src=<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;"https://www.tops-int.com/"<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height="200"<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width="400"><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/iframe&gt;
+
+                </li>
+                <p>
+                    <li type="none">
+                        <h3>Output :</h3>
+                        <br><br>
+                        <iframe src="https://www.tops-int.com/" height="400" width="600" style="border: none">
+                        </iframe>
+
+                    </li>
+                </p>
+
+            </fieldset>
+        </fieldset>
+        <br />
+        <br /><br /><br /><br />
+        <br />
+        <hr style="height: 3px; background-color: black" width="75%" />
+        <br />
+        <br /><br /><br />
+        <fieldset>
+            <legend>
+                <h1>1.14 What is the use of a span tag? Explain with example?</h1>
+            </legend>
+            <ul>
+                <p>
+                    <li>
+                        The <strong>HTML span</strong> element is a generic inline container
+                        for inline elements and content. It is used to group elements for
+                        styling purposes (by using the class or id attributes), A better way
+                        to use it when no other semantic element is available.
+                    </li>
+                </p>
+                <p>
+                    <li>
+                        The <strong>span tag</strong> is a paired tag means it has both
+                        open(&lt;) and closing (&gt;) tags, and it is mandatory to close the
+                        tag.
+                    </li>
+                </p>
+                <p>
+                    <li>
+                        The span tag is used for the grouping of inline elements & this tag
+                        does not make any visual change by itself.
+                    </li>
+                </p>
+                <p>
+                    <li>
+                        span is very similar to the div tag, but div is a
+                        <strong>block-level</strong> tag and span is an
+                        <strong>inline</strong> tag.
+                    </li>
+                </p>
+                <p>
+                    <li>
+                        <strong>Syntax : </strong>
+                </p>
+                <strong>&lt;span class=""&gt;Some Text&lt;/span&gt; </strong>
+                </li>
+
+            </ul>
+        </fieldset>
+        <br />
+        <br /><br /><br /><br />
+        <br />
+        <hr style="height: 3px; background-color: black" width="75%" />
+        <br />
+        <br /><br /><br />
+        <fieldset>
+            <legend>
+                <h1>
+                    1.15 How to insert a picture into a background image of a web page?
+                </h1>
+            </legend>
+            <ul>
+                <li>
+                    There are two methods for setting a background image in an HTML file:
+                    <ol>
+                        <li>By using background attribute in the tag in HTML.</li>
+                        <li>By using Inline or Internal Style Sheet.</li>
+                    </ol>
+                </li>
+            </ul>
+            <fieldset>
+                <legend>
+                    <h2>Method 1: By using background attribute in the tag in HTML</h2>
+                </legend>
+                <p>
+                    <strong>Syntax :</strong>
+                    <br />
+                    <br />
+                    <strong>&lt;body background =
+                        "image_name.extension"&gt;&lt;/body&gt;</strong>
+                    <br /><br />
+                    <strong>Code :</strong>
+                    <br /><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;body
+                    background="https://images.designtrends.com/wp-content/uploads/
+                    2015/11/ 30142526/ Cool-Plain-Grey-Background1.jpg"&gt;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;
+                    Hey...I am <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meet
+                    Patel &lt;/h2&gt;
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;/body&gt;
+                </p>
+            </fieldset>
+        </fieldset>
+        <br />
+        <br /><br /><br /><br />
+        <br />
+        <hr style="height: 3px; background-color: black" width="75%" />
+        <br />
+        <br /><br /><br />
+</body>
+
+</html>
