@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>
+      <center>Media Tags</center>
+    </h1>
+    <p>
+      <li>
+        The &lt;source&gt; HTML element specifies multiple media resources for
+        the &lt;picture&gt;, the &lt;audio&gt; element, or the &lt;video&gt;
+        element.
+      </li>
+      <li>
+        It is a void element, meaning that it has no content and does not have a
+        closing tag.
+      </li>
+      <li>
+        It is commonly used to offer the same media content in multiple file
+        formats in order to provide compatibility with a broad range of browsers
+        given their differing support for image file formats and media file
+        formats.
+      </li>
+    </p>
+    <hr />
+    <h3>Video Tag</h3>
+    <video src="M:\Downloads\Nature.mp4" height="200px"></video>
+    <hr />
+    <h3>Video Tag with Height</h3>
+    <video src="M:\Downloads\Nature.mp4" controls height="200px"></video>
+    <hr />
+    <h3>Video Tag with controls</h3>
+    <video
+      src="M:\Downloads\Nature.mp4"
+      controls
+      autoplay
+      height="200px"
+    ></video>
+    <hr />
+    <h3>Video tag with autoplay and muted</h3>
+    <video
+      src="M:\Downloads\Nature.mp4"
+      controls
+      autoplay
+      muted
+      height="200px"
+    ></video>
+    <hr />
+    <h3>Video Tag i Loop</h3>
+    <video
+      src="M:\Downloads\Nature.mp4"
+      controls
+      autoplay
+      muted
+      loop
+      height="200px"
+    ></video>
+    <hr />
+    <h3>Video Tag with Thumbnail</h3>
+    <video
+      src="M:\Downloads\Nature.mp3"
+      controls
+      loop
+      poster="M:\Wallpaper\Nature\space.jpg"
+      height="200px"
+    ></video>
+    <hr />
+    <h3>Audio Tag</h3>
+    <p><b>NOTE : </b>audio tag without control is not supported.</p>
+    <audio src="M:\Downloads\Sunset Lover.mp3"></audio>
+    <hr />
+    <h3>Video Tag controls</h3>
+    <audio src="M:\Downloads\Sunset Lover.mp3" controls></audio>
+    <hr />
+    <h3>Video Tag</h3>
+    <video controls width="250" height="200" muted>
+      <source src="M:\Downloads\Nature.mp4" type="" />
+      <source src="M:\Downloads\Nature.mp4" type="" />
+      Download the
+      <a href="M:\Downloads\Nature.mp4">WEBM</a>
+      or
+      <a href="M:\Downloads\Nature.mp3">MP4</a>
+      video.
+    </video>
+    <hr />
+    <h3>Picture Tag</h3>
+    <picture>
+      <source
+        media="(min-width:800px )"
+        srcset="https://openclipart.org/image/800px/185200"
+        sizes=""
+      />
+      <img
+        src="https://openclipart.org/image/800px/216528"
+        width="110"
+        height="110"
+        alt=""
+      />
+    </picture>
+  </body>
+</html>

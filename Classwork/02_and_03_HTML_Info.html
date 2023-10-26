@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>  
+    <h1><u>What is HTML ?</u></h1>
+    <ul>
+        <li>HTML stands for Hyper Text Markup Language.</li>
+        <li>HTML is the standard markup language for creating web pages.</li>
+        <li>HTML describes the structure of a web pages.</li>
+        <li>HTML consists of a series of elements.</li>
+        <li>HTML elements tell the browser how to display the content.</li>
+        <li>HTML elements are the building blocks of HTML pages.</li>
+        <li>HTML helps to create a skeleton/strcutre of our web pages.</li>
+        <li>CSS will helps to make that skeleton/strcutre beautify.</li>
+        <li>JS will helps to make it functional.</li>
+    </ul>
+    <br />
+    <hr />
+    <h1><u>History of HTML ?</u></h1>
+
+    <ul>
+        <li>
+            HTML was created by Sir Tim Berners-Lee in late 1991 but was not
+            officially released. It was published in 1995 as HTML 2.0. HTML 4.01 was
+            published in late 1999 and was a major version of HTML.
+        </li>
+        <li>
+            You can think of HTML as the skeleton, structure, or layout of a web
+            page. Everything on a webpage is built using components of HTML.
+        </li>
+        <li>
+            It defines the meaning and structure of web content. It is often
+            assisted by technologies such as Cascading Style Sheets (CSS) and
+            scripting languages such as JavaScript.
+        </li>
+    </ul>
+    <br />
+    <hr />
+    <h1><u>Basic Structure Of An HTML Page</u></h1>
+    <b>
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p>&lt;html&gt;</p>
+        <p>&emsp;&lt;head&gt;</p>
+        <p>&emsp;&emsp;&ensp;&lt;title&gt;Page Title&lt;title&gt;</p>
+        <p>&emsp;&lt;head&gt;</p>
+        <p>&emsp;&emsp;&emsp;&lt; body&gt;</p>
+        <p>&emsp;&emsp;&emsp;&emsp;&ensp;&lt;h1&gt;My First Heading&gt;</p>
+        <p>&emsp;&emsp;&emsp;&emsp;&ensp;&lt;My first paragraph&gt;</p>
+        <p>&emsp;&emsp;&emsp;&lt; body&gt;</p>
+        <p>&lt; html&gt;</p>
+    </b>
+    <br />
+    <hr />
+    <center>
+        <h1><u>HTML5 Page Structure</u></h1>
+    </center>
+    <br>
+
+    <h2>
+        <ul>
+            <li>
+                What is doctype in HTML ?
+            </li>
+        </ul>
+    </h2>
+    <p><strong>&emsp;&emsp;&emsp;&ensp;&lt;!DOCTYPE html &gt;</strong></p>
+    <p>&emsp;&emsp;&emsp;&ensp;- The doctype can be written in lowercase,
+        uppercase, or mixed case. As you noticed, the "5" is missing from the
+        declaration. Although this web markup is known as "HTML5".
+    </p>
+    <br>
+    <hr>
+    <h2>
+        <ul>
+            <li>
+                What is the HTML root element?
+            </li>
+        </ul>
+    </h2>
+    <strong>&emsp;&emsp;&emsp;&ensp;<p>&emsp;&emsp;&emsp;&ensp;&lt;html lang="en"&gt;</p>
+        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&lt;head&gt;&lt;/head&gt;</p>
+        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&lt;body&gt;&lt;/body&gt;</p>
+        <p>&emsp;&emsp;&emsp;&ensp;&lt;html &gt;</p>
+    </strong>
+    </p>
+    <p>&emsp;&emsp;&emsp;&ensp;- The &lt;html&gt; tag is the top level element of the HTML file. You will nest the
+        &lt;head&gt; and &lt;body&gt; tags inside of it.</p>
+    <p>&emsp;&emsp;&emsp;&ensp;- The lang attribute inside the opening <html> tag sets the language for the page. It is
+        also good to include it for accessibility reasons, because screen readers will know how to properly pronounce
+        the text.</p>
+    <br>
+    <hr>
+    <h2>
+        <ul>
+            <li>What are head tags in HTML?</li>
+        </ul>
+    </h2>
+    <strong>
+        <p>&emsp;&emsp;&emsp;&ensp;&lt;head&gt;</p>
+        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&lt;meta charset="UTF-8"&gt;</p>
+        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        </p>
+        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;</p>
+        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&lt;title>HTML 5 Boilerplate&lt;title&gt;</p>
+        <p>&emsp;&emsp;&emsp;&emsp;&emsp;&lt;link rel="stylesheet" href="style.css"&gt;</p>
+        <p>&emsp;&emsp;&emsp;&ensp;&lt;head&gt;</p>
+    </strong>
+    <p>&emsp;&emsp;&emsp;&ensp;- The
+
+        <head> tags contain information that is processed by machines. Inside the
+
+            <head> tags, you will nest metadata which is data that describes the document to the machine.
+
+    </p>
+    <br>
+    <hr>
+    <h2>
+        <ul>
+            <li>What is UTF-8 character encoding?</li>
+        </ul>
+    </h2>
+    <p><strong>&emsp;&emsp;&emsp;&ensp;&lt;meta charset="UTF-8"&gt;</strong></p>
+    <p>&emsp;&emsp;&emsp;&ensp;- UTF-8 is the standard character encoding you should use in your web pages. This will
+        usually be the first &lt;meta&gt; tag shown in the &lt;head&gt; element.</p>
+    <p>&emsp;&emsp;&emsp;&ensp;- A Unicode-based encoding such as UTF-8 can support many languages and can accommodate
+        pages and forms in any mixture of those languages.</p>
+    <p>&emsp;&emsp;&emsp;&ensp;- Its use also eliminates the need for server-side logic to individually determine the
+        character encoding for each page served or each incoming form submission.</p>
+    <br>
+    <hr>
+    <h2>
+        <ul>
+            <li>What is the viewport meta tag in HTML?</li>
+        </ul>
+    </h2>
+    <p><strong>&emsp;&emsp;&emsp;&ensp;&lt;meta name="viewport" content="width=device-width,
+            initial-scale=1.0"&gt;</strong></p>
+    <p>&emsp;&emsp;&emsp;&ensp;- This tag renders the width of the page to the width of the device's screen size. If you
+        have a mobile device that is 600px wide, then the browser window will also be 600px wide.</p>
+    <p>&emsp;&emsp;&emsp;&ensp;- The initial-scale controls the zoom level. The value of 1 for the initial-scale
+        prevents the default zoom by browsers.</p>
+    <br>
+    <hr>
+    <h2>
+        <ul>
+            <li>What does X-UA-Compatible mean?</li>
+        </ul>
+    </h2>
+    <p><strong>&emsp;&emsp;&emsp;&ensp;&lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;</strong></p>
+    <p>&emsp;&emsp;&emsp;&ensp;- This &lt;meta&gt; tag specifies the document mode for Internet Explorer. IE=edge is the
+        highest supported mode.</p>
+    <br>
+    <hr>
+    <h2>
+        <ul>
+            <li>What are HTML title tags?</li>
+        </ul>
+    </h2>
+    <p><strong>&emsp;&emsp;&emsp;&ensp;&lt;title&gt;HTML 5 Boilerplate&lt;title&gt;</strong></p>
+    <p>&emsp;&emsp;&emsp;&ensp;- The &lt;title&gt; tag is the title for the web page. This text is shown in the browser's title bar.</p>
+</body>     
+
+</html>
