@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1_Types_Of_CSS</title>
+    <style>
+        .pclass {
+            color: #009900;
+            font-size: 50px;
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+    <fieldset>
+        <legend><strong>
+                <h1>Types of CSS</h1>
+            </strong></legend>
+        <ul>
+            <li>
+
+                Cascading Style Sheet (CSS) is used to set the style in web pages that contain HTML elements. It sets
+                the
+                background color, font-size, font-family, color, … etc. properties of elements on a web page.
+            </li>
+            <br>
+            <li>
+                There are three types of CSS which are given below:
+            </li>
+            <ul>
+                <li>
+                    Inline CSS
+                </li>
+                <li>
+                    Internal or Embedded CSS
+                </li>
+                <li>
+                    External CSS
+                </li>
+            </ul>
+        </ul>
+        <fieldset>
+            <legend><h2>1. Inline CSS :</h2></legend>
+
+            <br>
+            <li>
+                Inline CSS contains the CSS property in the body section attached to the element is known as inline CSS.
+                This kind of style is specified within an HTML tag using the style attribute.
+            </li>
+            <br>
+            <li><strong> Example :</strong>
+                <br>
+                <br>
+               <strong>
+
+                   &lt;p style="color:#009900; font-size:50px;
+                   <br>
+                   &emsp;&emsp;&emsp;&emsp;font-style:italic; text-align:center;"&gt;
+                   <br>
+                   &emsp;&emsp;Inline CSS
+                </strong>
+            </li>
+            <br>
+            &lt;/p&gt;
+            <br>
+            <br>
+            <strong>Output : </strong>
+            <br>
+            <p style="color:#009900; font-size:50px;
+        font-style:italic; text-align:center;">
+                Inline CSS
+            </p>
+            </li>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <br>
+            <legend><h2>2. Internal CSS</h2></legend>
+            <li>
+                This can be used when a single HTML document must be styled uniquely. The CSS rule set should be within
+                the HTML file in the head section i.e. the CSS is embedded within the &lt;style&gt; tag inside the head
+                section of the HTML file.
+            </li>
+            <br>
+            <li><strong> Example :</strong>
+               <strong>
+
+                   <br>
+                   <br>
+                   &lt;style&gt; <br>
+                   &emsp;&emsp; .pclass &lbrace; <br>
+                   &emsp;&emsp;&emsp; font-style: bold; <br>
+                   &emsp;&emsp;&emsp; font-size: 20px; <br>
+                   &emsp;&emsp;&rbrace; <br>
+                   &lt;/style&gt;
+                </strong>
+            </li>
+            <br>
+            <br>
+            <strong>Output : </strong>
+            <br>
+            <p class="pclass">
+                Internal CSS
+            </p>
+            </li>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <br>
+            <legend><h2>3. External CSS</h2></legend>
+            <li>
+                External CSS contains separate CSS files that contain only style properties with the help of tag
+                attributes (For example class, id, heading, … etc). CSS property is written in a separate file with a
+                .css extension and should be linked to the HTML document using a link tag. It means that, for each
+                element, style can be set only once and will be applied across web pages.
+            </li>
+            <li><strong> Example :</strong>
+                <br>
+                <br>
+<strong>
+    &lt;style&gt; <br>
+    &emsp;&emsp; .pclass &lbrace; <br>
+    &emsp;&emsp;&emsp; font-style: bold; <br>
+    &emsp;&emsp;&emsp; font-size: 20px; <br>
+    &emsp;&emsp;&rbrace; <br>
+    &lt;/style&gt;
+</strong>
+            </li>
+            <br>
+            <br>
+            <strong>Output : </strong>
+            <br>
+            <p class="pclass">
+                External CSS
+            </p>
+            </li>
+            <br>
+        </fieldset>
+    </fieldset>
+
+</body>
+
+</html>
