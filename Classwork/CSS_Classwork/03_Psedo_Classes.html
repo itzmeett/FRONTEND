@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03_Psedo_Classes</title>
+    <style>
+  /* :active psedo class */
+
+        .joinBtn {
+            width: 10em;
+            height: 5ex;
+            background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+
+        .joinBtn:active {
+            box-shadow: 2px 2px 5px #fc894d;
+        }
+
+        a:any-link {
+            color: forestgreen;
+            text-decoration-color: hotpink;
+        }
+
+        /* :autofill psedo class */
+
+        label {
+            display: block;
+            margin-top: 1em;
+        }
+
+        input:autofill {
+            border: 3px solid darkorange;
+        }
+
+        input:-webkit-autofill {
+            border: 3px solid darkorange;
+        }
+
+        /* :checked psedo class */
+        label,
+        input[type='submit'] {
+            display: block;
+            margin-top: 1em;
+        }
+
+        input:checked {
+            border: none;
+            outline: 2px solid rgb(217, 90, 22);
+        }
+
+        /* :input pseudo class */
+
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>Psedo Classes</h1>
+        </legend>
+        <ul>
+            <li>A pseudo-class is used to define a special state of an element.</li>
+            <li>Style an element when a user mouses over it</li>
+            <li>Style visited and unvisited links differently</li>
+            <li>Style an element when it gets focus</li>
+        </ul>
+        <br />
+        <fieldset>
+            <legend>
+                <h2>:active</h2>
+            </legend>
+            <li>
+                The :active CSS pseudo-class represents an element (such as a button)
+                that is being activated by the user. When using a mouse, "activation"
+                typically starts when the user presses down the primary mouse button.
+            </li>
+            <br>
+            <li>
+                <strong> Example : </strong>
+            </li>
+            <li type="none">
+                <p>This is example of <strong>:active</strong> class example :</p>
+                <button class="joinBtn">Subscribe</button>
+            </li>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                <h2>:any-link</h2>
+            </legend>
+            <ul>
+                <li>The :any-link CSS pseudo-class selector represents an element that acts as the source anchor of a
+                    hyperlink, independent of whether it has been visited.</li>
+                <br>
+                <li><strong>Example :</strong>
+                </li>
+                <br>
+                <li type="none">
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link">MDN Web Docs</a>
+                </li>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>:autofill</h2>
+            </legend>
+            <ul>
+                <li>The :autofill CSS pseudo-class matches when an &lt;input&gt; element has its value autofilled by the
+                    browser. </li>
+                </li>
+                <li type="none">
+                <li>
+                    <p>Click on the text box and choose any option suggested by your browser.</p>
+                <li><strong>Example :</strong>
+                    <label for="name">Name</label>
+                    <input name="name" type="text" autocomplete="name" />
+
+                    <label for="email">Email Address</label>
+                    <input name="email" type="email" autocomplete="email" />
+
+                    <label for="country">Country</label>
+                    <input name="country" type="text" autocomplete="country-name" />
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>:checked</h2>
+            </legend>
+            <ul>
+                <li>The :checked CSS pseudo-class selector represents any radio (&lt;input type="radio"&gt;), checkbox
+                    (&lt;input type="checkbox"&gt;), or option (&lt;option&gt; in a &lt;select&gt;) element that is
+                    checked or toggled to an on state. </li>
+                </li>
+                <li type="none">
+                <li>
+                    <p>Click on the text box and choose any option suggested by your browser.</p>
+                <li><strong>Example :</strong>
+                    <label><input name="origin" type="radio" value="Male" checked /> Male</label>
+                    <label><input name="origin" type="radio" value="Female" /> Female</label>
+                    <p>Please agree to our terms:</p>
+
+                    <label><input name="cricket" type="checkbox" checked /> Cricket</label>
+
+                    <label><input name="football" type="checkbox" />Football</label>
+
+                    <input type="submit" value="Submit form" />
+            </ul>
+        </fieldset>
+    </fieldset>
+</body>
+
+</html>
