@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>03_Psedo_Classes</title>
     <style>
-  /* :active psedo class */
+        /* :active pseudo class */
 
         .joinBtn {
-            width: 10em;
-            height: 5ex;
-            background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+            width: 140px;
+            height: 40px;
+            background-image: linear-gradient(180deg, #f34079 40%, #fc894d);
             border: none;
             border-radius: 5px;
             font-weight: bold;
@@ -25,10 +25,10 @@
 
         a:any-link {
             color: forestgreen;
-            text-decoration-color: hotpink;
+            text-decoration-color: rgb(250, 4, 4);
         }
 
-        /* :autofill psedo class */
+        /* :autofill pseudo class */
 
         label {
             display: block;
@@ -43,19 +43,59 @@
             border: 3px solid darkorange;
         }
 
-        /* :checked psedo class */
+        /* :checked pseudo class */
         label,
         input[type='submit'] {
             display: block;
             margin-top: 1em;
         }
 
-        input:checked {
+        .checked-input:checked {
             border: none;
-            outline: 2px solid rgb(217, 90, 22);
+            outline: 2px solid rgb(16, 247, 3);
         }
 
-        /* :input pseudo class */
+        /* :default pseudo class*/
+
+        .default-input:default {
+            border: none;
+            outline: 2px solid black;
+        }
+
+        /* :empty pseudo class */
+        div:empty {
+            outline: 2px solid rgb(255, 2, 2);
+            height: 20px;
+        }
+
+        /* :first pseudo class */
+
+        @page :first {
+            margin-left: 50%;
+            margin-top: 50%;
+        }
+
+        /* :first-child pseudo class */
+        .team li:first-child {
+            border: 2px solid orange;
+        }
+        
+        /* :focus pseudo class */
+        input:focus {
+            background-color: rgb(123, 214, 244);
+        }
+        
+        select:focus {
+            background-color: rgb(255, 255, 168);
+        }
+        /* :invalid pseudo class */
+        input:invalid {
+  background-color: ivory;
+  border: none;
+  outline: 2px solid red;
+  border-radius: 5px;
+}
+
 
     </style>
 </head>
@@ -63,7 +103,7 @@
 <body>
     <fieldset>
         <legend>
-            <h1>Psedo Classes</h1>
+            <h1>Pseudo Classes</h1>
         </legend>
         <ul>
             <li>A pseudo-class is used to define a special state of an element.</li>
@@ -71,7 +111,6 @@
             <li>Style visited and unvisited links differently</li>
             <li>Style an element when it gets focus</li>
         </ul>
-        <br />
         <fieldset>
             <legend>
                 <h2>:active</h2>
@@ -81,7 +120,6 @@
                 that is being activated by the user. When using a mouse, "activation"
                 typically starts when the user presses down the primary mouse button.
             </li>
-            <br>
             <li>
                 <strong> Example : </strong>
             </li>
@@ -90,7 +128,6 @@
                 <button class="joinBtn">Subscribe</button>
             </li>
         </fieldset>
-        <br>
         <fieldset>
             <legend>
                 <h2>:any-link</h2>
@@ -129,6 +166,7 @@
 
                     <label for="country">Country</label>
                     <input name="country" type="text" autocomplete="country-name" />
+                </li>
             </ul>
         </fieldset>
         <fieldset>
@@ -144,15 +182,130 @@
                 <li>
                     <p>Click on the text box and choose any option suggested by your browser.</p>
                 <li><strong>Example :</strong>
-                    <label><input name="origin" type="radio" value="Male" checked /> Male</label>
+                    <label><input class="checked-input" name="origin" type="radio" value="Male" checked /> Male</label>
+                    <label><input class="checked-input" name="origin" type="radio" value="Female" /> Female</label>
+                    <p>Please agree to our terms:</p>
+
+                    <label><input class="checked-input" name="cricket" type="checkbox" checked /> Cricket</label>
+
+                    <label><input class="checked-input" name="football" type="checkbox" />Football</label>
+
+                    <input type="submit" value="Submit form" />
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>:default</h2>
+            </legend>
+            <ul>
+                <li>The :default CSS pseudo-class selects form elements that are the default in a group of related
+                    elements.</li>
+                </li>
+                <br>
+                <li><strong>Example :</strong>
+                    <label><input class="default-input" name="origin" type="radio" value="Male" checked /> Male</label>
                     <label><input name="origin" type="radio" value="Female" /> Female</label>
                     <p>Please agree to our terms:</p>
 
-                    <label><input name="cricket" type="checkbox" checked /> Cricket</label>
+                    <label><input class="default-input" name="cricket" type="checkbox" checked /> Cricket</label>
 
                     <label><input name="football" type="checkbox" />Football</label>
 
                     <input type="submit" value="Submit form" />
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>:empty</h2>
+            </legend>
+            <ul>
+                <li>The :empty CSS pseudo-class represents any element that has no children.</li>
+                <br>
+                <li><strong>Example :</strong>
+                    <br>
+                    <p>Element with no content :</p>
+                    <div></div>
+                    </strong>
+                </li>
+
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>:first-child</h2>
+            </legend>
+            <ul>
+                <li>
+                    The :first-child CSS pseudo-class represents the first element among a group of sibling elements.
+                </li>
+                <br>
+                <li><strong>Example :</strong></li>
+            </ul>
+            <p>&emsp;&emsp;&nbsp;&nbsp;<strong>
+                    Indian Cricket Team:
+                </strong></p>
+            <ul class="team">
+                <li>Rohit Sharma (C)</li>
+                <li>Shubhman Gill</li>
+                <li>Virat Kohli</li>
+                <li>Shreyas Iyer</li>
+                <li>KL Rahul (WK)</li>
+                <li>Suryakumar Yadav</li>
+                <li>Ravindra Jadeda</li>
+                <li>Mohmad Shami</li>
+                <li>Jasprit Boomrah</li>
+                <li>Kuldeep Yadav</li>
+                <li>Mohamad Siraj</li>
+            </ul>
+
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>:focus</h2>
+            </legend>
+            <ul>
+                <li>
+                    It is generally triggered when the user clicks or taps on an element or selects it with the keyboard's Tab key.
+                </li>
+                <br>
+                <li><strong>Example :</strong>
+                <br>
+                <form>
+                    <p>Which sport do you like ?</p>
+                    <label>Full Name: <input name="firstName" type="text" /></label>
+                    <label
+                      >Sports :
+                      <select name="flavor">
+                        <option>Cricket</option>
+                        <option>Football</option>
+                        <option>Kabaddi</option>
+                        <option>Chess</option>
+                      </select>
+                    </label>
+                  </form>
+                </li>
+            </ul>
+          
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>:invalid</h2>
+            </legend>
+            <ul>
+                <li>
+                    The :invalid CSS pseudo-class represents any &lt; form &gt; , &lt; fieldset &gt; , &lt; input &gt; or other &lt; form &gt; element whose contents fail to validate.
+                </li>
+                <br>
+                <li><strong>Example :</strong>
+                <br>
+                <form>
+                    <label for="email">Email Address:</label>
+                    <input name="email" type="email" value="name@example.com" />
+                    <label for="age">Your age: (18+)</label>
+                    <input name="age" type="number" value="5" min="18" />
+                </li>
             </ul>
         </fieldset>
     </fieldset>
