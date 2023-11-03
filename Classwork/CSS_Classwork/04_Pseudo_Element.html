@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04_Pseudo_Element</title>
+    <style>
+        /* ::After pseudo element : */
+        p ::after {
+            content: " Tops Technology";
+        }
+
+        /* ::After pseudo element : */
+        a::before {
+            content: "🔗";
+        }
+
+        a {
+            color: forestgreen;
+            text-decoration: none;
+        }
+
+        /* ::After pseudo element : */
+        .fl::first-letter {
+            font-size: 30px;
+            font-weight: bold;
+            color: forestgreen;
+        }
+
+        /* ::After pseudo element : */
+        div::first-line {
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* ::After pseudo element : */
+        input::placeholder {
+            font-weight: bold;
+            opacity: 0.5;
+            color: red;
+        }
+
+        /* ::After pseudo element : */
+        .sel::selection {
+            color: red;
+            background-color: lightyellow;
+        }
+
+        /* ::After pseudo element : */
+        button {
+            font-size: 1.2rem;
+            padding: 5px 15px;
+        }
+
+        dialog::backdrop {
+            background-color: lightyellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>Pseudo Element</h1>
+        </legend>
+        <br />
+        <fieldset>
+            <legend>
+                <h2>::after</h2>
+            </legend>
+            <ul>
+                <li>
+                    In CSS, ::after creates a pseudo-element that is the last child of
+                    the selected element.
+                </li>
+                <br />
+                <li>
+                    <strong>Example :</strong> <br />
+                    <p>Meet Patel from</p>
+                    <p>Nikshit Tank from</p>
+                    <p>Mayur Mori from</p>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>::before</h2>
+            </legend>
+            <ul>
+                <li>
+                    In CSS, ::before creates a pseudo-element that is the first child of
+                    the selected element.
+                </li>
+                <br />
+                <li>
+                    <strong>Example :</strong>
+                    <br />
+                    <br />
+                    <a href="https://www.tops-int.com/">Tops Technologies</a>
+                    <br />
+                    <a href="https://careercenter.tops-int.com/">Tops Career Center</a>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>::first-letter</h2>
+            </legend>
+            <ul>
+                <li>
+                    The ::first-letter CSS pseudo-element applies styles to the first
+                    letter of the first line of a block container, but only when not
+                    preceded by other content (such as images or inline tables).
+                </li>
+                <br />
+                <li>
+                    <strong>Example :</strong>
+                    <br />
+                    <p class="fl">
+                        Cascading Style Sheets, fondly referred to as CSS, is a simply
+                        designed language intended to simplify the process of making web
+                        pages presentable.
+                    </p>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>::first-line</h2>
+            </legend>
+            <ul>
+                <li>
+                    The ::first-line CSS pseudo-element applies styles to the first line
+                    of a block container.
+                </li>
+                <br />
+                <li>
+                    <strong>Example :</strong>
+                    <br />
+                    <div>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse hic
+                        dolor recusandae delectus facilis quidem velit! Quam, nam
+                        reprehenderit incidunt qui molestias maiores exercitationem.
+                        Mollitia culpa dolores delectus, cumque deserunt praesentium
+                        adipisci earum reprehenderit vitae distinctio beatae quidem
+                        laboriosam vel porro. Illo accusantium exercitationem itaque,
+                        laborum impedit illum nesciunt voluptatem! Qui, vitae distinctio
+                        possimus officiis, aliquid dolor quos quidem omnis ipsam impedit,
+                        labore deleniti explicabo? Nam ipsum culpa voluptates delectus
+                        temporibus consequuntur voluptatibus sequi corporis dicta quos
+                        dignissimos, voluptatem aliquid magni laborum modi similique ad
+                        facere fuga nisi voluptas expedita! Cumque dignissimos culpa
+                        excepturi, explicabo eligendi amet nostrum velit impedit nobis,
+                        quis fuga unde tenetur repellendus molestias. Ex sequi commodi
+                        veritatis sapiente temporibus ab, rem distinctio, nihil aperiam,
+                        atque rerum blanditiis. Blanditiis tenetur numquam sequi dolore
+                        aspernatur. Veritatis, consequatur debitis ex, facilis
+                        perspiciatis corporis accusantium esse assumenda nulla quasi quae
+                        repellendus vero harum voluptate perferendis modi, aliquam quam.
+                        Voluptatibus adipisci dignissimos, doloremque dolorum hic, dicta
+                        eveniet fuga ex distinctio ut esse repellat obcaecati, quae quod
+                        deserunt sunt? Aliquid modi doloribus itaque corrupti voluptate
+                        quo necessitatibus eveniet, dolore provident velit asperiores
+                        dicta beatae eum! Aut voluptate quasi nihil non ad. Sed excepturi
+                        pariatur id blanditiis quam mollitia corporis, doloribus esse
+                        debitis iure amet rerum, voluptates omnis et consequuntur,
+                        quisquam maiores quibusdam similique minima magni modi. Nesciunt
+                        quidem vero, tempore unde vitae eaque nihil officiis rerum
+                        molestias labore, culpa, expedita quia maiores exercitationem
+                        porro iste. Aspernatur tempore quisquam ad doloribus, laudantium
+                        culpa molestias debitis vel, placeat quidem perspiciatis
+                        repudiandae itaque eveniet nulla, iusto illum illo possimus fugit
+                        nostrum libero qui dicta rerum dolor! Quasi fuga saepe ratione
+                        explicabo reiciendis. Tempora voluptates mollitia id, tenetur
+                        nulla quaerat doloribus nemo, a nisi dicta perferendis adipisci
+                        autem cumque aliquid. Minus atque et iure facilis qui ex voluptate
+                        amet consectetur voluptates numquam, exercitationem doloremque
+                        nesciunt esse nisi cumque harum, illum voluptatem itaque rerum
+                        reiciendis totam deserunt fuga quam? Est architecto officia
+                        soluta. Quod officiis, sunt rem consectetur, in molestias hic
+                        eligendi, laboriosam nesciunt obcaecati quas. Aperiam,
+                        voluptatibus? Obcaecati quo, dolorum voluptatibus numquam
+                        doloremque, odio, optio consectetur explicabo laborum rerum culpa.
+                    </div>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>::placeholder</h2>
+            </legend>
+            <ul>
+                <li>
+                    The ::placeholder CSS pseudo-element represents the placeholder text
+                    in an &lt;input&gt; or &lt;textarea&gt; element.
+                </li>
+                <br />
+                <li>
+                    <strong>Example :</strong>
+                    <br />
+                    <br />
+                    <label for="first-name">Your phone number:</label><br />
+
+                    <input type="tel" name="phone" minlength="10" maxlength="10" placeholder="It must be 10 digits" />
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>::selection</h2>
+            </legend>
+            <ul>
+                <li>
+                    The ::selection CSS pseudo-element applies styles to the part of a
+                    document that has been highlighted by the user (such as clicking and
+                    dragging the mouse across text).
+                </li>
+                <br />
+                <li>
+                    <strong>Example :</strong>
+                    <br />
+                    <br />
+                    <p class="sel">
+                        Select a fragment of this paragraph, to see how its appearance is
+                        affected.
+                    </p>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>::backdrop</h2>
+            </legend>
+            <ul>
+                <li>
+                    The ::backdrop CSS pseudo-element is a box the size of the viewport, which is rendered immediately
+                    beneath any element being presented in the top layer.
+                </li>
+                <br />
+                <li>
+                    <strong>Example :</strong>
+                    <br />
+                    <br />
+                    <button id="showDialogBtn">Show a dialog</button>
+
+                    <dialog id="favDialog">
+                        <form method="dialog">
+                            <p>The background shown outside of this dialog is a backdrop.</p>
+                            <button id="confirmBtn">Close the dialog</button>
+                        </form>
+                    </dialog>
+
+                    </p>
+                </li>
+            </ul>
+        </fieldset>
+    <script>
+        const showDialogBtn = document.getElementById('showDialogBtn');
+        const favDialog = document.getElementById('favDialog');
+
+        showDialogBtn.addEventListener('click', () => favDialog.showModal());
+
+    </script>
+    </fieldset>
+</body>
+
+</html>
