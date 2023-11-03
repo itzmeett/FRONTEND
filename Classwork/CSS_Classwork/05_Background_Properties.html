@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05_Background_Properties</title>
+    <style>
+      .box {
+        height: 200px;
+        padding: 50px;
+        margin: 50px;
+        border: 20px dashed rgba(255, 0, 0, 0.461);
+      }
+
+      .bg-color {
+        background-color: lightyellow;
+      }
+
+      .bg-image {
+        background-color: lightyellow;
+        background-image: url(Nature);
+      }
+
+      .bg-attachment {
+        /* background-attachment: scroll; */
+        background-attachment: fixed;
+        /* background-attachment: local;  */
+        background-image: url(Nature);
+        color: white;
+        background-color: rgb(252, 252, 124);
+      }
+
+      .bg-clip {
+        /* background-clip: border-box; */
+        /* background-clip: padding-box; */
+        background-clip: content-box;
+        background-image: url(Nature);
+        color: white;
+        background-color: yellow;
+      }
+
+      .bg-origin {
+        /* background-origin: border-box; */
+        /* background-origin: padding-box; */
+        background-origin: content-box;
+        background-image: url(Nature);
+        color: white;
+        background-color: yellow;
+      }
+
+      .bg-position {
+        /* background-position: bottom; */
+        background-position: 25% 50%;
+        /* background-position: 234px 567px; */
+        background-image: url(Nature);
+        color: white;
+        background-color: yellow;
+      }
+
+      .bg-repeat {
+        background-repeat: no-repeat;
+        /* background-repeat: repeat-x; */
+        /* background-repeat: space; */
+        background-image: url(Nature);
+        color: white;
+        background-color: yellow;
+      }
+
+      .bg-size {
+        /* background-size: 20%; */
+        background-size: cover;
+        /* background-size: contain; */
+        background-image: url(Nature);
+        color: white;
+        background-color: yellow;
+      }
+
+      .shorthand {
+        background: lightyellow;
+      }
+
+      .linear-gradient {
+        background: linear-gradient(45deg, orange, white, green);
+        /* background: linear-gradient(#e66465, #9198e5); */
+      }
+
+      .radial-gradient {
+        background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
+        /* background: (orange, white, green); */
+        /* background: radial-gradient(orange, white, green); */
+      }
+    </style>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>
+        <h1>05_Background_Properties</h1>
+      </legend>
+      <br />
+      <ul>
+        <li>
+          The background property is specified as one or more background layers,
+          separated by commas.
+        </li>
+        <br />
+        <ol>
+          <strong>
+            <li>background-image</li>
+            <li>background-color</li>
+            <li>background-attachment</li>
+            <li>background-clip</li>
+            <li>background-origin</li>
+            <li>background-position</li>
+            <li>background-repeat</li>
+            <li>background-size</li>
+            <li>shorthand</li>
+            <li>linear-gradient</li>
+            <li>radial-gradient</li>
+          </strong>
+        </ol>
+      </ul>
+      <br />
+      <fieldset>
+        <legend>
+          <h2>Background-color</h2>
+        </legend>
+        <div class="box bg-color"></div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h2>Background-image</h2>
+        </legend>
+        <div class="box bg-image"></div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h2>background-attachment</h2>
+        </legend>
+        <ul>
+          <li>
+            The background-attachment CSS property sets whether a background
+            image's position is fixed within the viewport, or scrolls with its
+            containing block.
+          </li>
+          <br />
+          <li>
+            <strong>Example : </strong>
+            <br />
+            <div class="box bg-attachment">
+              <p>
+                The background is fixed relative to the viewport. Even if an
+                element has a scrolling mechanism, the background doesn't move
+                with the element. (This is not compatible with background-clip:
+                text.)
+                <br />
+                The background is fixed relative to the element's contents. If
+                the element has a scrolling mechanism, the background scrolls
+                with the element's contents, and the background painting area
+                and background positioning area are relative to the scrollable
+                area of the element rather than to the border framing them.
+                <br />
+                The background is fixed relative to the element itself and does
+                not scroll with its contents. (It is effectively attached to the
+                element's border.)
+              </p>
+            </div>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h2>background-clip</h2>
+        </legend>
+        <ul>
+          <li>
+            The background-clip CSS property sets whether an element's
+            background extends underneath its border box, padding box, or
+            content box.
+          </li>
+          <br />
+          <li>
+            <strong>Example : </strong>
+            <br />
+            <div class="box bg-clip">
+              <p>
+                The background is fixed relative to the viewport. Even if an
+                element has a scrolling mechanism, the background doesn't move
+                with the element. (This is not compatible with background-clip:
+                text.)
+                <br />
+                The background is fixed relative to the element's contents. If
+                the element has a scrolling mechanism, the background scrolls
+                with the element's contents, and the background painting area
+                and background positioning area are relative to the scrollable
+                area of the element rather than to the border framing them.
+                <br />
+                The background is fixed relative to the element itself and does
+                not scroll with its contents. (It is effectively attached to the
+                element's border.)
+              </p>
+            </div>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h2>background-origin</h2>
+        </legend>
+        <ul>
+          <li>
+            The background-origin CSS property sets the background's origin:
+            from the border start, inside the border, or inside the padding.
+          </li>
+          <br />
+          <li>
+            <strong>Example : </strong>
+            <br />
+            <div class="box bg-origin">
+              <p>
+                The background is fixed relative to the viewport. Even if an
+                element has a scrolling mechanism, the background doesn't move
+                with the element. (This is not compatible with background-clip:
+                text.)
+                <br />
+                The background is fixed relative to the element's contents. If
+                the element has a scrolling mechanism, the background scrolls
+                with the element's contents, and the background painting area
+                and background positioning area are relative to the scrollable
+                area of the element rather than to the border framing them.
+                <br />
+                The background is fixed relative to the element itself and does
+                not scroll with its contents. (It is effectively attached to the
+                element's border.)
+              </p>
+            </div>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h2>background-position</h2>
+        </legend>
+        <ul>
+          <li>
+            The background-position CSS property sets the initial position for
+            each background image. The position is relative to the position
+            layer set by background-origin.
+          </li>
+          <br />
+          <li>
+            <strong>Example : </strong>
+            <br />
+            <div class="box bg-position">
+              <p>
+                The background is fixed relative to the viewport. Even if an
+                element has a scrolling mechanism, the background doesn't move
+                with the element. (This is not compatible with background-clip:
+                text.)
+                <br />
+                The background is fixed relative to the element's contents. If
+                the element has a scrolling mechanism, the background scrolls
+                with the element's contents, and the background painting area
+                and background positioning area are relative to the scrollable
+                area of the element rather than to the border framing them.
+                <br />
+                The background is fixed relative to the element itself and does
+                not scroll with its contents. (It is effectively attached to the
+                element's border.)
+              </p>
+            </div>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h2>background-repete</h2>
+        </legend>
+        <ul>
+          <li>
+            The background-repeat CSS property sets how background images are
+            repeated. A background image can be repeated along the horizontal
+            and vertical axes, or not repeated at all.
+          </li>
+          <br />
+          <li>
+            <strong>Example : </strong>
+            <br />
+            <div class="box bg-repeat">
+              <p>
+                The background is fixed relative to the viewport. Even if an
+                element has a scrolling mechanism, the background doesn't move
+                with the element. (This is not compatible with background-clip:
+                text.)
+                <br />
+                The background is fixed relative to the element's contents. If
+                the element has a scrolling mechanism, the background scrolls
+                with the element's contents, and the background painting area
+                and background positioning area are relative to the scrollable
+                area of the element rather than to the border framing them.
+                <br />
+                The background is fixed relative to the element itself and does
+                not scroll with its contents. (It is effectively attached to the
+                element's border.)
+              </p>
+            </div>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h2>background-size</h2>
+        </legend>
+        <ul>
+          <li>
+            The background-size CSS property sets the size of the element's
+            background image. The image can be left to its natural size,
+            stretched, or constrained to fit the available space.
+          </li>
+          <br />
+          <li>
+            <strong>Example : </strong>
+            <br />
+            <div class="box bg-size">
+              <p>
+                The background is fixed relative to the viewport. Even if an
+                element has a scrolling mechanism, the background doesn't move
+                with the element. (This is not compatible with background-clip:
+                text.)
+                <br />
+                The background is fixed relative to the element's contents. If
+                the element has a scrolling mechanism, the background scrolls
+                with the element's contents, and the background painting area
+                and background positioning area are relative to the scrollable
+                area of the element rather than to the border framing them.
+                <br />
+                The background is fixed relative to the element itself and does
+                not scroll with its contents. (It is effectively attached to the
+                element's border.)
+              </p>
+            </div>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h2>Shorthand</h2>
+        </legend>
+        <ul>
+          <li>
+            The background shorthand CSS property sets all background style
+            properties at once, such as color, image, origin and size, or repeat
+            method.
+          </li>
+          <li>
+            properties not set in the background shorthand property value
+            declaration are set to their default values.
+          </li>
+
+          <br />
+          <li>
+            <strong>Example : </strong>
+            <br />
+            <div class="box shorthand">
+              <p>
+                The background is fixed relative to the viewport. Even if an
+                element has a scrolling mechanism, the background doesn't move
+                with the element. (This is not compatible with background-clip:
+                text.)
+                <br />
+                The background is fixed relative to the element's contents. If
+                the element has a scrolling mechanism, the background scrolls
+                with the element's contents, and the background painting area
+                and background positioning area are relative to the scrollable
+                area of the element rather than to the border framing them.
+                <br />
+                The background is fixed relative to the element itself and does
+                not scroll with its contents. (It is effectively attached to the
+                element's border.)
+              </p>
+            </div>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h2>Linear Gradient</h2>
+        </legend>
+        <ul>
+          <li>
+            The linear-gradient() CSS function creates an image consisting of a
+            progressive transition between two or more colors along a straight
+            line.
+          </li>
+          <li>
+            properties not set in the background shorthand property value
+            declaration are set to their default values.
+          </li>
+
+          <br />
+          <li>
+            <strong>Example : </strong>
+            <br />
+            <div class="box linear-gradient">
+              <p>
+                The background is fixed relative to the viewport. Even if an
+                element has a scrolling mechanism, the background doesn't move
+                with the element. (This is not compatible with background-clip:
+                text.)
+                <br />
+                The background is fixed relative to the element's contents. If
+                the element has a scrolling mechanism, the background scrolls
+                with the element's contents, and the background painting area
+                and background positioning area are relative to the scrollable
+                area of the element rather than to the border framing them.
+                <br />
+                The background is fixed relative to the element itself and does
+                not scroll with its contents. (It is effectively attached to the
+                element's border.)
+              </p>
+            </div>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h2>Radial Gradient</h2>
+        </legend>
+        <ul>
+          <li>
+            The background shorthand CSS property sets all background style
+            properties at once, such as color, image, origin and size, or repeat
+            method.
+          </li>
+          <li>
+            properties not set in the background shorthand property value
+            declaration are set to their default values.
+          </li>
+
+          <br />
+          <li>
+            <strong>Example : </strong>
+            <br />
+            <div class="box radial-gradient">
+              <p>
+                The background is fixed relative to the viewport. Even if an
+                element has a scrolling mechanism, the background doesn't move
+                with the element. (This is not compatible with background-clip:
+                text.)
+                <br />
+                The background is fixed relative to the element's contents. If
+                the element has a scrolling mechanism, the background scrolls
+                with the element's contents, and the background painting area
+                and background positioning area are relative to the scrollable
+                area of the element rather than to the border framing them.
+                <br />
+                The background is fixed relative to the element itself and does
+                not scroll with its contents. (It is effectively attached to the
+                element's border.)
+              </p>
+            </div>
+          </li>
+        </ul>
+      </fieldset>
+    </fieldset>
+  </body>
+</html>
