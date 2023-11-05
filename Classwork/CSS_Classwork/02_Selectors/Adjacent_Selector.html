@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Selector</title>
+    <style>
+        * {
+            font-size: 22px;
+        }
+
+ div+p {
+    color: red;
+    background-color: lightyellow;
+
+ }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>Adjacent Selector</h1>
+        </legend>
+        <br>
+        <ul>
+            <li>
+                <h2>Syntax :
+                    <br>
+                    <pre>
+
+                        former_element + target_element { 
+                            style properties 
+                        }
+                        
+                    </pre>
+                </h2>
+            </li>
+            <li>
+                <h2>Example :
+                </h2>
+                <br>
+                <p>
+                    <strong>CSS code : </strong>
+                </p>
+                <pre><strong>
+                    *{
+                        font-size: 22px;
+                    }
+                    div>p {
+                        color: red;
+                        background-color: lightyellow;
+                    }
+                    div>div>ul>li {
+                        color: forestgreen;
+                    }
+                </strong>
+            </pre>
+                <hr width="70%">
+                <br> 
+                <div>
+                    <p>This is Paragraph-1 in the div, so immidiate next paragraph on applies style </p>
+                </div>
+                <p>This is Paragraph-2</p>
+                <div>
+                    <p>This is Paragraph-3 in the div, so immidiate next paragraph on applies style</p>
+                </div>
+                <p>This is Paragraph-4</p>
+    </fieldset>
+</body>
+
+</html>

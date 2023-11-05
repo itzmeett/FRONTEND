@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling Selector</title>
+    <style>
+        * {
+            font-size: 22px;
+        }
+
+ div ~ p {
+    color: red;
+    background-color: lightyellow;
+
+ }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>General Sibling Selector</h1>
+        </legend>
+        <br>
+        <ul>
+            <li>
+                <h2>Syntax :
+                    <br>
+                    <pre>
+                        
+                        former_element ~ target_element  { 
+                            style properties 
+                        }
+                        
+                    </pre>
+                </h2>
+            </li>
+            <hr width="80%">
+            <li>
+                <p>
+                    <strong>CSS code : </strong>
+                </p>
+                <pre><strong>
+                    div ~ p {
+                        color: red;
+                        background-color: lightyellow;
+                        
+                    }
+                </strong>
+            </pre>
+            <hr width="80%">
+            <br> 
+            <li>
+                <h2>Example :
+                </h2>
+            </li>
+            <br>
+                <div>
+                    <p>This paragraph is before div, so here styles will not apply</p>
+                </div>
+                <p>Here is 1st paragraph</p>
+                <p>Here is 2nd paragraph</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Subsequent-sibling_combinator">MDN reference</a>
+                <br>
+                <br>
+                <ul type="disc">
+                    <li>List-1</li>
+                    <li>List-2</li>
+                    <li>List-3</li>
+                </ul>
+                <p>Here is 3rd paragraph</p>
+
+    </fieldset>
+</body>
+
+</html>

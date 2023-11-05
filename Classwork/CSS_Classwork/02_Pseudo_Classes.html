@@ -11,18 +11,14 @@
         .joinBtn {
             width: 140px;
             height: 40px;
-            background-image: linear-gradient(180deg, #f34079 40%, #fc894d);
             border: none;
             border-radius: 5px;
             font-weight: bold;
-            color: white;
             cursor: pointer;
+            background-color: lightgreen;
         }
 
-        .joinBtn:active {
-            box-shadow: 2px 2px 5px #ffb891;
-        }
-
+        /* :any-link pseudo class */
         a:any-link {
             color: forestgreen;
             text-decoration-color: rgb(250, 4, 4);
@@ -96,18 +92,12 @@
             outline: 2px solid #ff0000;
             border-radius: 5px;
         }
-       
+
         /* :invalid pseudo class */
         a:visited {
             color: forestgreen;
             text-decoration-color: #ff0000;
         }
-        /* :invalid pseudo class */
-        .child li:nth-child(-n+7) {
-            border: solid forestgreen;
-            background-color: rgb(248, 235, 127);
-        }
-
     </style>
 </head>
 
@@ -334,44 +324,16 @@
                     <br>
                     <ul type="none">
                         <li>
-                          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:visited">MDN Web Docs</a>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:visited">MDN Web Docs</a>
                         </li>
                         <li>
-                          <a href="https://www.w3schools.com/cssref/sel_visited.php">CSS Reference</a>
+                            <a href="https://www.w3schools.com/cssref/sel_visited.php">CSS Reference</a>
                         </li>
                         <li>
                             <a href="https://developer.mozilla.org/missing-1">Random MDN page</a>
                         </li>
-                          <li>
-                      </ul>
-                </li>
-            </ul>
-        </fieldset>
-        <fieldset>
-            <legend>
-                <h2>:nth-child()</h2>
-            </legend>
-            <ul>
-                <li>
-                    In other words, the :nth-child() selector selects child elements according to their position among all the sibling elements within a parent element.
-                </li>
-                <br>
-                <li><strong>Example : </strong> Highlighted players are batsman.</li>
-                    <br>
-                    <br>
-                        <ul type="disc" class="child">
-                            <li>Rohit Sharma (C)</li>
-                            <li>Shubhman Gill</li>
-                            <li>Virat Kohli</li>
-                            <li>Shreyas Iyer</li>
-                            <li>KL Rahul (WK)</li>
-                            <li>Suryakumar Yadav</li>
-                            <li>Ravindra Jadeda</li>
-                            <li>Mohmad Shami</li>
-                            <li>Jasprit Boomrah</li>
-                            <li>Kuldeep Yadav</li>
-                            <li>Mohamad Siraj</li>
-                        </ul>
+                        <li>
+                    </ul>
                 </li>
             </ul>
         </fieldset>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+    <style>
+        * {
+            font-size: 22px;
+        }
+
+        div>p {
+            color: red;
+            background-color: lightyellow;
+        }
+
+        div>div>ul>li {
+            color: forestgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>Child selector</h1>
+        </legend>
+        <br>
+        <ul>
+            <li>
+                <h2>Syntax :
+                    <br>
+                    <pre>
+
+                        selector1 > selector2 { 
+                            style properties 
+                        }
+                        
+                    </pre>
+                </h2>
+            </li>
+            <li>
+                <h2>Example :
+                </h2>
+                <br>
+                <p>
+                    <strong>CSS code : </strong>
+                </p>
+                <pre><strong>
+                    *{
+                        font-size: 22px;
+                    }
+                    div>p {
+                        color: red;
+                        background-color: lightyellow;
+                    }
+                    div>div>ul>li {
+                        color: forestgreen;
+                    }
+                </strong>
+            </pre>
+                <hr width="70%">
+                <br>
+                <p>This paragraph out of div</p>
+                <div>
+                    <p>
+                        This Paragraph in the div.
+                    </p>
+                    <div>This Paragraph have unordered list and list have green color.
+                        <br>
+                        <br>
+                        <ul>
+                            <li>List-1</li>
+                            <li>List-2</li>
+                            <li>List-3</li>
+                            <li>List-4</li>
+                        </ul>
+                    </div>
+                </div>
+
+    </fieldset>
+</body>
+
+</html>
