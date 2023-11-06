@@ -1,7 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
 
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.size {
+    font-size: 40px;
+}
 </style>
 
 <head>
@@ -11,13 +41,127 @@
     <fieldset>
         <legend><h1>Font</h1></legend>
         <ul>
-            <li style="font: 1.2rem "Fira Sans", sans-serif;">The font CSS shorthand property sets all the different properties of an element's font. Alternatively, it sets an element's font to a system font.</li>
+            <li>In CSS there are five generic font families:
+                <br>
+                <br>
+                <ol>
+                    <li><strong>Serif</strong> fonts have a small stroke at the edges of each letter.</li>
+                    <li><strong>Sans-serif</strong> fonts have clean lines (no small strokes attached). </li>
+                    <li><strong>Monospace fonts</strong> - here all the letters have the same fixed width. </li>
+                    <li><strong>Cursive</strong> fonts imitate human handwriting.</li>
+                    <li><strong>Fantasy</strong> fonts are decorative/playful fonts.</li>
+                </ol>
+            </li>
         </ul>
         <br>
-        <li><strong>Example :
+        <ul>
+            <li>
+                <strong>Example :</strong>
+                <br><br>
+                    <p class="p1">This is belongs to "Times New Roman", serif font-family</p>
+                    <p class="p2">This is belongs to "Arial", san-serif font-family</p>
+                    <p class="p3">This is belongs to "Lucida Console", "Courier New", monospace font-family</p>
+                </li>
+                <br><br>
+            <hr width="70%">
             <br><br>
-        </strong></li>
+            <li type="none">
+                <img src="https://linuxhint.com/wp-content/uploads/2022/02/word-image-644.png" width="40%" height="40%">
+            </li>
+<br><br>
+        </ul>
+        <fieldset>
+            <legend><strong><h2>Font Style</h2></strong></legend>
+            <ul>
+                <li>This property has three values:
+                    <br><br>
+                    <ol>
+                        <li>normal - The text is shown normally</li>
+                        <li>italic - The text is shown in italics</li>
+                        <li>oblique - The text is "leaning" (oblique is very similar to italic, but less supported)</li>
+                        <br>
+                        <li><strong>Example :</strong>
+                            <br>
+                            <p class="normal">This is a paragraph in normal style.</p>
+                            <p class="italic">This is a paragraph in italic style.</p>
+                            <p class="oblique">This is a paragraph in oblique style.</p>
+                            
+                        </li>
+                        <li><strong>Code :</strong>
+                            <br><pre>
+                            <strong>
 
+                              p.normal {
+                                    font-style: normal;
+                              }
+                              
+                              p.italic {
+                                font-style: italic;
+                              }
+                              
+                              p.oblique {
+                                  font-style: oblique;
+                              }
+                            </strong>
+                        </pre></li>
+                    </ol>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><strong><h2>Font Weight</h2></strong></legend>
+            <ul>
+                <li>The font-weight property specifies the weight of a font:
+                    <br><br>
+                    <ul type="disc">
+                       <li>
+                           <strong>Example :</strong>
+                       </li>
+                        <p class="normal">This is a normal paragraph.</p>
+                        <p class="bold">This is bold paragraph</p>
+                            <br>
+                            <li>
+                                <strong>Code :</strong>
+                            </li>
+                            <pre>
+                            <strong>
+                                .bold {
+                                    font-weight: bold;
+                                }
+                            </strong>
+                        </pre></li>
+                    </ul>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend><strong><h2>Font Size</h2></strong></legend>
+            <ul>
+                <li>The font-size property sets the size of the text.
+                    <br><br>
+                    <ul type="disc">
+                       <li>
+                           <strong>Example :</strong>
+                       </li>
+                       <h1>This is heading 1</h1>
+                       <h2>This is heading 2</h2>
+                       <p class="size">This is a paragraph.</p>
+                            <br>
+                            <li>
+                                <strong>Code :</strong>
+                            </li>
+                            <pre>
+                            <strong>
+                                .size {
+                                    font-size: 40px;
+                                }
+                            </strong>
+                        </pre></li>
+                    </ul>
+                </li>
+            </ul>
+        </fieldset>
     </fieldset>
 </head>
 <body>
