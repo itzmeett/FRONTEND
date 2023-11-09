@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-.p1 {
-  font-family: "Times New Roman", Times, serif;
-}
+    .p1 {
+        font-family: "Times New Roman", Times, serif;
+    }
 
-.p2 {
-  font-family: Arial, Helvetica, sans-serif;
-}
+    .p2 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-.p3 {
-  font-family: "Lucida Console", "Courier New", monospace;
-}
+    .p3 {
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
 
-p.normal {
-  font-style: normal;
-}
+    p.normal {
+        font-style: normal;
+    }
 
-p.italic {
-  font-style: italic;
-}
+    p.italic {
+        font-style: italic;
+    }
 
-p.oblique {
-  font-style: oblique;
-}
+    p.oblique {
+        font-style: oblique;
+    }
 
-.bold {
-    font-weight: bold;
-}
+    .bold {
+        font-weight: bold;
+    }
 
-.size {
-    font-size: 40px;
-}
+    .size {
+        font-size: 40px;
+    }
 </style>
 
 <head>
@@ -39,7 +39,9 @@ p.oblique {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>05_Font</title>
     <fieldset>
-        <legend><h1>Font</h1></legend>
+        <legend>
+            <h1>Font</h1>
+        </legend>
         <ul>
             <li>In CSS there are five generic font families:
                 <br>
@@ -58,20 +60,22 @@ p.oblique {
             <li>
                 <strong>Example :</strong>
                 <br><br>
-                    <p class="p1">This is belongs to "Times New Roman", serif font-family</p>
-                    <p class="p2">This is belongs to "Arial", san-serif font-family</p>
-                    <p class="p3">This is belongs to "Lucida Console", "Courier New", monospace font-family</p>
-                </li>
-                <br><br>
+                <p class="p1">This is belongs to "Times New Roman", serif font-family</p>
+                <p class="p2">This is belongs to "Arial", san-serif font-family</p>
+                <p class="p3">This is belongs to "Lucida Console", "Courier New", monospace font-family</p>
+            </li>
+            <br><br>
             <hr width="70%">
             <br><br>
             <li type="none">
                 <img src="https://linuxhint.com/wp-content/uploads/2022/02/word-image-644.png" width="40%" height="40%">
             </li>
-<br><br>
+            <br><br>
         </ul>
         <fieldset>
-            <legend><strong><h2>Font Style</h2></strong></legend>
+            <legend><strong>
+                    <h2>Font Style</h2>
+                </strong></legend>
             <ul>
                 <li>This property has three values:
                     <br><br>
@@ -85,10 +89,11 @@ p.oblique {
                             <p class="normal">This is a paragraph in normal style.</p>
                             <p class="italic">This is a paragraph in italic style.</p>
                             <p class="oblique">This is a paragraph in oblique style.</p>
-                            
+
                         </li>
                         <li><strong>Code :</strong>
-                            <br><pre>
+                            <br>
+                            <pre>
                             <strong>
 
                               p.normal {
@@ -103,73 +108,84 @@ p.oblique {
                                   font-style: oblique;
                               }
                             </strong>
-                        </pre></li>
+                        </pre>
+                        </li>
                     </ol>
                 </li>
             </ul>
         </fieldset>
         <br>
         <fieldset>
-            <legend><strong><h2>Font Weight</h2></strong></legend>
+            <legend><strong>
+                    <h2>Font Weight</h2>
+                </strong></legend>
             <ul>
                 <li>The font-weight property specifies the weight of a font:
                     <br><br>
                     <ul type="disc">
-                       <li>
-                           <strong>Example :</strong>
-                       </li>
+                        <li>
+                            <strong>Example :</strong>
+                        </li>
                         <p class="normal">This is a normal paragraph.</p>
                         <p class="bold">This is bold paragraph</p>
-                            <br>
-                            <li>
-                                <strong>Code :</strong>
-                            </li>
-                            <pre>
+                        <br>
+                        <li>
+                            <strong>Code :</strong>
+                        </li>
+                        <pre>
                             <strong>
                                 .bold {
                                     font-weight: bold;
                                 }
                             </strong>
-                        </pre></li>
-                    </ul>
+                        </pre>
                 </li>
+            </ul>
+            </li>
             </ul>
         </fieldset>
         <fieldset>
-            <legend><strong><h2>Font Size</h2></strong></legend>
+            <legend><strong>
+                    <h2>Font Size</h2>
+                </strong></legend>
             <ul>
                 <li>The font-size property sets the size of the text.
                     <br><br>
                     <ul type="disc">
-                       <li>
-                           <strong>Example :</strong>
-                       </li>
-                       <h1>This is heading 1</h1>
-                       <h2>This is heading 2</h2>
-                       <p class="size">This is a paragraph.</p>
-                            <br>
-                            <li>
-                                <strong>Code :</strong>
-                            </li>
-                            <pre>
+                        <li>
+                            <strong>Example :</strong>
+                        </li>
+                        <h1>This is heading 1</h1>
+                        <h2>This is heading 2</h2>
+                        <p class="size">This is a paragraph.</p>
+                        <br>
+                        <li>
+                            <strong>Code :</strong>
+                        </li>
+                        <pre>
                             <strong>
                                 .size {
                                     font-size: 40px;
                                 }
                             </strong>
-                        </pre></li>
-                    </ul>
+                        </pre>
                 </li>
+            </ul>
+            </li>
             </ul>
         </fieldset>
         <br>
         <fieldset>
-            <legend><h2>External Fonts</h2></legend>
+            <legend>
+                <h2>External Fonts</h2>
+            </legend>
             <iframe src="../CSS_Classwork/05_External_Fonts.html" width="700px" height=600px"></iframe>
         </fieldset>
     </fieldset>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
