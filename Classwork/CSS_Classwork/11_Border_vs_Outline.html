@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border properties</title>
+    <style>
+        .border-outline {
+            outline: solid 5px forestgreen;
+            border: solid 5px yellow;
+            padding: 6px;
+        }
+
+        a {
+            margin: 12px;
+        }
+
+        a:hover {
+            border: 5px groove peru;
+        }
+
+        .lable{
+            border-radius: 200px 2px 4px;
+            background-color: bisque;
+            border: 1px solid black;
+            height: 110px;
+            width: 110px;
+        }
+
+        .circle{
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            border: 1px solid black;
+            background-color: blueviolet;
+        }
+
+        .shape{
+            height: 100px;
+            width: 100px;
+            border-radius:  14px 455px 0px 225px;
+            border: 1px solid black;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend><h1>Border Properties</h1></legend>
+        <fieldset>
+            <legend>
+            <h2>Border vs Outline</h2>
+        </legend>    
+        <body>
+            <div class="border-outline">
+                Border vs Outline
+            </div>
+            <br>
+        <br><br>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Border-radius</h2>
+            </legend>
+            <p>Pizza</p>
+            <div class="lable"></div>
+            <p>Circle</p>
+            <div class="circle"></div>
+            <p>Random Shape</p>
+            <div class="shape"></div>
+        </fieldset>
+</fieldset>
+</body>
+
+</html

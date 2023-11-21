@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text in CSS</title>
+    <style>
+        .p-eg {
+            color: forestgreen;
+        }
+
+        div {
+            border: 1px solid black;
+            width: 20%;
+            padding: 15px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .start {
+            text-align: start;
+        }
+
+        .end {
+            text-align: end;
+        }
+
+        .justify {
+            text-align: justify;
+        }
+
+        .line {
+            text-decoration: line-through;
+        }
+
+        /* text decoration */
+
+        .line {
+            text-decoration: line-through;
+        }
+
+        .color {
+            text-decoration-color: purple;
+        }
+
+        .wavy {
+            text-decoration: forestgreen wavy underline;
+        }
+
+        .thickness {
+            text-decoration-thickness: 20px;
+        }
+
+        /* text transform */
+
+        .capital {
+            text-transform: capitalize;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .lowercase {
+            text-transform: lowercase;
+        }
+
+        .indent {
+            text-indent: 20%;
+        }
+
+        /* letter-spacing */
+        .ls {
+            text-transform: Capitalize;
+            text-indent: 35%;
+            letter-spacing: 3px;
+        }
+
+        /* word-spacing */
+        .ws {
+            text-transform: lowercase;
+            word-spacing: 5px;
+        }
+
+        .breakall{
+            word-break:break-all;
+        }
+
+        .keepall{
+            word-break: keep-all;
+        }
+
+        .normal{
+            word-break: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>Text in CSS</h1>
+        </legend>
+        <fieldset>
+            <legend>
+                <h2>Text color</h2>
+            </legend>
+            <strong>
+                Exaple :
+                <br>
+                <pre>
+                .p-eg{
+                    color: forestgreen;
+                }
+            </pre>
+            </strong>
+            <br>
+            <strong>
+                Output :
+                <p class="p-eg">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, nostrum culpa, eos id, perferendis
+                    magnam quidem voluptates corporis laboriosam aspernatur tempore deleniti. Alias odio amet ipsam,
+                    numquam reiciendis dignissimos ducimus in doloremque voluptates, animi, cum sequi qui laborum
+                    reprehenderit fugiat aliquam necessitatibus cumque atque!
+                </p>
+            </strong>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Text alignment</h2>
+            </legend>
+            <strong>
+                Exaple :
+                <br>
+                <pre>
+                    .center {
+                        text-align: center;
+                    }
+            
+                    .left {
+                        text-align: left;
+                    }
+            
+                    .right {
+                        text-align: right;
+                    }
+            
+                    .start {
+                        text-align: start;
+                    }
+            
+                    .end {
+                        text-align: end;
+                    }
+            
+                    .justify {
+                        text-align: justify;
+                    }
+                </pre>
+            </strong>
+            <br>
+            <strong>
+                Output :
+            </strong>
+            <br>
+            <br>
+            <h3>text-align : center</h3>
+            <div class="center">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eum iure ut. Ratione, nam? Quas
+                corporis optio doloremque, perspiciatis voluptas placeat? Sit repudiandae quos maiores nostrum,
+                consequuntur ut obcaecati blanditiis.
+            </div>
+            <br>
+            <h3>text-align : left</h3>
+            <div class="left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro animi numquam facere non aliquam fugiat?
+                Saepe eius architecto itaque unde quaerat reiciendis, ad magnam, impedit minus aliquid id voluptatum
+                quasi!
+            </div>
+            <br>
+            <h3>text-align : right</h3>
+            <div class="right">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro animi numquam facere non aliquam fugiat?
+                Saepe eius architecto itaque unde quaerat reiciendis, ad magnam, impedit minus aliquid id voluptatum
+                quasi!
+            </div>
+            <br>
+            <h3>text-align : start</h3>
+            <div class="start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro animi numquam facere non aliquam fugiat?
+                Saepe eius architecto itaque unde quaerat reiciendis, ad magnam, impedit minus aliquid id voluptatum
+                quasi!
+            </div>
+            <br>
+            <h3>text-align : end</h3>
+            <div class="end">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro animi numquam facere non aliquam fugiat?
+                Saepe eius architecto itaque unde quaerat reiciendis, ad magnam, impedit minus aliquid id voluptatum
+                quasi!
+            </div>
+            <br>
+            <h3>text-align : justify</h3>
+            <div class="justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro animi numquam facere non aliquam fugiat?
+                Saepe eius architecto itaque unde quaerat reiciendis, ad magnam, impedit minus aliquid id voluptatum
+                quasi!
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Text decoration</h2>
+            </legend>
+            <strong>
+                Exaple :
+                <br>
+                <pre>
+                    .line {
+                        text-decoration: line-through;
+                    }
+            
+                    .color {
+                        text-decoration-color: purple;
+                    }
+            
+                    .wavy {
+                        text-decoration: forestgreen wavy underline;
+                    }
+            
+                    .thickness {
+                        text-decoration-thickness: 20px;
+                    }
+            </pre>
+            </strong>
+            <br>
+
+            Output :
+            <br>
+            <strong>
+                <h3>text-decoration: line-through</h3>
+            </strong>
+            <p class="line">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <br>
+            <strong>
+                <h3>text-decoration-color: purple</h3>
+            </strong>
+            <p class="color">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <br>
+            <strong>
+                <h3>text-decoration-style: wavy</h3>
+            </strong>
+            <p class="wavy">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <br>
+            <strong>
+                <h3>text-decoration-thickness: 20px</h3>
+            </strong>
+            <p class="thickness">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Text transform & indent</h2>
+            </legend>
+            <strong>
+                Exaple :
+                <br>
+                <pre>
+                    .capital{
+                        text-transform: capitalize;
+                    }
+            
+                    .uppercase{
+                        text-transform: uppercase;
+                    }
+            
+                    .lowercase{
+                        text-transform: lowercase;
+                    }
+            
+                    .indent{
+                        text-indent: 20%;
+                    }
+            </pre>
+            </strong>
+            <br>
+            <strong>
+                Output :
+                <h3>text-transform: capitalize</h3>
+            </strong>
+            <p class="capital">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <br>
+            <strong>
+                <h3>text-transform: uppercase</h3>
+            </strong>
+            <p class="uppercase">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <br>
+            <strong>
+                <h3>text-transform: lowercase</h3>
+            </strong>
+            <p class="lowercase">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <br>
+            <strong>
+                <h3>text-transform: lowercase</h3>
+            </strong>
+            <p class="indent">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur adipisci sit ad optio explicabo
+                aut facilis? Doloribus tempore repellendus, eligendi perspiciatis accusantium hic dolore, fuga facilis
+                perferendis nostrum dignissimos molestiae quo, consequatur sit porro doloremque?
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>
+                    Text letter-spacing & word-spacing
+                </h2>
+            </legend>
+            <strong>
+                Exaple :
+                <br>
+                <pre>
+                    .ls {
+                        text-transform: Capitalize;
+                        text-indent: 35%;
+                        letter-spacing: 3px;
+                    }
+
+                    .ws {
+                        text-transform: lowercase;
+                        word-spacing: 5px;
+                    }
+            
+                    .breakall{
+                        word-break:break-all;
+                    }
+            
+                    .keepall{
+                        word-break: keep-all;
+                    }
+            
+                    .normal{
+                        word-break: normal;
+                    }
+                 </pre>
+            </strong>
+            <br>
+            <strong>
+                Output :
+            </strong>
+                <h3>letter-spacing</h3>
+                <p class="ls">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, nostrum culpa, eos id, perferendis
+                    magnam quidem voluptates corporis laboriosam aspernatur tempore deleniti. Alias odio amet ipsam,
+                    numquam reiciendis dignissimos ducimus in doloremque voluptates, animi, cum sequi qui laborum
+                    reprehenderit fugiat aliquam necessitatibus cumque atque!
+                </p>
+
+                <h3>word-spacing</h3>
+                <p class="ws">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore eligendi neque, cupiditate nobis voluptate laborum ea ex officia eos assumenda blanditiis fuga, a cumque vitae nostrum repellendus repudiandae ducimus enim molestiae aliquid. Quis, velit.
+                </p>
+                <h3>word-break</h3>
+                <p class="breakall">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore eligendi neque, cupiditate nobis voluptate laborum ea ex officia eos assumenda blanditiis fuga, a cumque vitae nostrum repellendus repudiandae ducimus enim molestiae aliquid. Quis, velit.
+                </p>
+                <h3>keep-all</h3>
+                <p class="keepall">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore eligendi neque, cupiditate nobis voluptate laborum ea ex officia eos assumenda blanditiis fuga, a cumque vitae nostrum repellendus repudiandae ducimus enim molestiae aliquid. Quis, velit.
+                </p>
+                <h3>normal</h3>
+                <p class="normal">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore eligendi neque, cupiditate nobis voluptate laborum ea ex officia eos assumenda blanditiis fuga, a cumque vitae nostrum repellendus repudiandae ducimus enim molestiae aliquid. Quis, velit.
+                </p>
+
+
+                
+
+        </fieldset>
+    </fieldset>
+</body>
+
+</html>
