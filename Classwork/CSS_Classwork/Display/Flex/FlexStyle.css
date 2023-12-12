@@ -29,7 +29,7 @@
             border: 1px solid black;
         }
 
-        .num2{
+        .num2 {
             height: 100px;
             width: 50px;
             background-color: rgb(249, 249, 127);
@@ -323,19 +323,19 @@
             width: 400px;
             border: solid black 3px;
         }
-        
+
         .flex-grow-child0 {
             flex-grow: 0;
         }
-        
+
         .flex-grow-child1 {
             flex-grow: 4;
         }
-        
+
         /* flex-grow css end */
-        
+
         /* flex-shrink css start */
-        
+
         .shrink-flexible {
             display: flex;
             width: 120px;
