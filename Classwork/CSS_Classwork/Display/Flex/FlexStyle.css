@@ -1,0 +1,353 @@
+        .container {
+            display: flex;
+            background-color: forestgreen;
+            min-height: 70px;
+            border: 1px solid black;
+        }
+
+        .box {
+            border: 3px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            background-color: rgb(249, 249, 127);
+        }
+
+        hr {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            width: 70%;
+            height: 3px;
+            background-color: black;
+
+        }
+
+        .num {
+            min-height: 100px;
+            min-width: 50px;
+            background-color: rgb(249, 249, 127);
+            border: 1px solid black;
+        }
+
+        .num2{
+            height: 100px;
+            width: 50px;
+            background-color: rgb(249, 249, 127);
+            border: 1px solid black;
+        }
+
+        /* common css end */
+        /* flex direction css start */
+
+        .flex-direction-column {
+            display: flex;
+            flex-direction: column;
+            background-color: forestgreen;
+            min-height: 70px;
+            border: 1px solid black;
+        }
+
+        .flex-direction-column-reverse {
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: forestgreen;
+            min-height: 70px;
+            border: 1px solid black;
+        }
+
+        .flex-direction-row {
+            display: flex;
+            flex-direction: row;
+            background-color: forestgreen;
+            min-height: 70px;
+            border: 1px solid black;
+        }
+
+        .flex-direction-row-reverse {
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: forestgreen;
+            min-height: 70px;
+            border: 1px solid black;
+        }
+
+        /* flex direction css end */
+        /* flex wrap start css */
+        .col {
+            border: 3px solid black;
+            width: 170px;
+            height: 170px;
+            margin: 5px;
+            background-color: rgb(249, 249, 127);
+        }
+
+        .flex-no-wrap .col {
+            width: 250px !important;
+        }
+
+        .flex-no-wrap {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: scroll;
+        }
+
+        .flex-wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-wrap-reverse {
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+
+        /* flex wrap end css */
+        /* order css start */
+        .flex-order0 {
+            display: flex;
+
+        }
+
+        .flex-order1 {
+            display: flex;
+
+        }
+
+        .flex-order-1 {
+            display: flex;
+
+        }
+
+        .order0 {
+            order: 0;
+        }
+
+        .order1 {
+            order: 1;
+        }
+
+        .order-1 {
+            order: -1;
+        }
+
+        /* order css end */
+
+
+        /* flex-justify-content css start */
+        .justify-content-flex-start {
+            width: 25%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .justify-content-flex-end {
+            width: 20%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .justify-content-center {
+            width: 40%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .justify-content-space-around {
+            width: 40%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .justify-content-space-between {
+            width: 40%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .justify-content-space-evenly {
+            width: 40%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+
+
+        /* flex-justify-content css End */
+
+        /* align-item css start */
+
+        .align-items-stretch {
+            border: 3px solid black;
+            display: flex;
+            align-items: streatch;
+            height: 150px;
+            width: 35%;
+        }
+
+        .align-items-flex-start {
+            border: 3px solid black;
+            display: flex;
+            align-items: flex-start;
+            height: 150px;
+            width: 35%;
+        }
+
+        .align-items-flex-end {
+            border: 3px solid black;
+            display: flex;
+            align-items: flex-end;
+            width: 35%;
+            height: 150px;
+        }
+
+        .align-items-center {
+            border: 3px solid black;
+            display: flex;
+            align-items: center;
+            width: 35%;
+            height: 150px;
+        }
+
+        .align-items-baseline {
+            border: 3px solid black;
+            display: flex;
+            align-items: baseline;
+            width: 35%;
+            height: 150px;
+        }
+
+        .align-items-auto {
+            border: 3px solid black;
+            display: flex;
+            align-items: auto;
+            width: 20%;
+            height: 150px;
+        }
+
+        .inum {
+            min-height: 60px;
+            background-color: rgb(249, 249, 127);
+            border: 2px solid black;
+        }
+
+
+        /* align-item css end */
+
+        /* align-self css start */
+        .align-self-stretch {
+            border: 3px solid black;
+            display: flex;
+            height: 150px;
+            width: 35%;
+        }
+
+        .align-self-flex-start {
+            border: 3px solid black;
+            width: 35%;
+            display: flex;
+            height: 150px;
+        }
+
+        .align-self-flex-end {
+            border: 3px solid black;
+            display: flex;
+            width: 35%;
+            height: 150px;
+        }
+
+        .align-self-center {
+            border: 3px solid black;
+            display: flex;
+            width: 35%;
+            height: 150px;
+        }
+
+        .align-self-baseline {
+            border: 3px solid black;
+            display: flex;
+            width: 35%;
+            height: 150px;
+        }
+
+        .align-self-auto {
+            border: 3px solid black;
+            display: flex;
+            width: 35%;
+            height: 150px;
+        }
+
+        .stretch-child {
+            align-self: stretch;
+        }
+
+        .flex-start-child {
+            align-self: flex-start;
+        }
+
+        .flex-end-child {
+            align-self: flex-end;
+        }
+
+        .center-child {
+            align-self: center;
+        }
+
+        .baseline-child {
+            align-self: baseline;
+        }
+
+        .auto-child {
+            align-self: auto;
+        }
+
+        .auto-self-auto {
+            border: 3px solid black;
+            display: flex;
+            align-self: auto;
+            width: 20%;
+            height: 150px;
+        }
+
+        /* align-self css end */
+
+        /* flex-grow css start */
+
+        .grow-flexible {
+            display: flex;
+            width: 400px;
+            border: solid black 3px;
+        }
+        
+        .flex-grow-child0 {
+            flex-grow: 0;
+        }
+        
+        .flex-grow-child1 {
+            flex-grow: 4;
+        }
+        
+        /* flex-grow css end */
+        
+        /* flex-shrink css start */
+        
+        .shrink-flexible {
+            display: flex;
+            width: 120px;
+            border: solid black 3px;
+        }
+
+        .flex-shrink-child0 {
+            flex-shrink: 0;
+        }
+
+        .flex-shrink-child1 {
+            flex-shrink: 2;
+        }
+
+        /* flex-shrink css end */

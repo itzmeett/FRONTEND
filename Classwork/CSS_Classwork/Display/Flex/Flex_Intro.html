@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex in css</title>
+    <link rel="stylesheet" href="FlexStyle.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>Ordering & Orientation</h1>
+        </legend>
+        <fieldset>
+            <legend>
+                <h2>Display : flex</h2>
+            </legend>
+            <ul>
+                <li>The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available
+                    in
+                    its flex container.</li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Ordering & Orientation</h2>
+            </legend>
+            <li>flex-direction</li>
+            <li>flex-wrap</li>
+            <li>flex-flow</li>
+            <li>order</li>
+            <li>Alignment</li>
+            <li>justify-content</li>
+            <li>align-items, align-self</li>
+            <li>align-content</li>
+            <li>Flexibility</li>
+            <li>flex-grow</li>
+            <li>flex-shrink</li>
+            <li>flex-basis</li>
+            <li>flex</li>
+            <li>Flex values</li>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>display: flex-flow</h2>
+            </legend>
+            <fieldset>
+
+                <div class="container">
+                    <div class="box">Box1</div>
+                    <div class="box">Box2</div>
+                    <div class="box">Box3</div>
+                    <div class="box">Box4</div>
+                    <div class="box">Box5</div>
+                    <div class="box">Box6</div>
+                </div>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Display flex-direction</h2>
+            </legend>
+            <ul>
+                <li>The flex-direction CSS property sets how flex items are placed in the flex container defining the
+                    main axis and the direction (normal or reversed).</li>
+            </ul>
+            <fieldset>
+                <legend>
+                    <h3>flex-direction: column</h3>
+                </legend>
+
+                <div class="flex-direction-column">
+                    <div class="box">Box1</div>
+                    <div class="box">Box2</div>
+                    <div class="box">Box3</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>flex-direction: column-reverse</h3>
+                </legend>
+                <div class="flex-direction-column-reverse">
+                    <div class="box">Box1</div>
+                    <div class="box">Box2</div>
+                    <div class="box">Box3</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>flex-direction: row</h3>
+                </legend>
+                <div class="flex-direction-row">
+                    <div class="box">Box1</div>
+                    <div class="box">Box2</div>
+                    <div class="box">Box3</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>flex-direction: row-reverse</h3>
+                </legend>
+                <div class="flex-direction-row-reverse">
+                    <div class="box">Box1</div>
+                    <div class="box">Box2</div>
+                    <div class="box">Box3</div>
+                </div>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Display flex wrap</h2>
+            </legend>
+            <fieldset>
+                <legend>
+                    <h3>flex no-wrap</h3>
+                </legend>
+                <div class="flex-no-wrap">
+                    <div class="col">Column1 Lorem, ipsum dolor.</div>
+                    <div class="col">Column2 Lorem, ipsum dolor.</div>
+                    <div class="col">Column4 Lorem, ipsum dolor.</div>
+                    <div class="col">Column5 Lorem, ipsum dolor.</div>
+                    <div class="col">Column6 Lorem, ipsum dolor.</div>
+                    <div class="col">Column7 Lorem, ipsum dolor.</div>
+                    <div class="col">Column8 Lorem, ipsum dolor.</div>
+                    <div class="col">Column9 Lorem, ipsum dolor.</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>flex wrap</h3>
+                </legend>
+                <div class="flex-wrap">
+                    <div class="col">Column1</div>
+                    <div class="col">Column2</div>
+                    <div class="col">Column3</div>
+                    <div class="col">Column4</div>
+                    <div class="col">Column5</div>
+                    <div class="col">Column6</div>
+                    <div class="col">Column7</div>
+                    <div class="col">Column8</div>
+                    <div class="col">Column9</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>flex wrap-reverse</h3>
+                </legend>
+                <div class="flex-wrap-reverse">
+                    <div class="col">Column1</div>
+                    <div class="col">Column2</div>
+                    <div class="col">Column3</div>
+                    <div class="col">Column4</div>
+                    <div class="col">Column5</div>
+                    <div class="col">Column6</div>
+                    <div class="col">Column7</div>
+                    <div class="col">Column8</div>
+                    <div class="col">Column9</div>
+                </div>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Display flex order</h2>
+            </legend>
+            <fieldset>
+                <legend>
+                    <h3>order: 0</h3>
+                </legend>
+                <div class="flex-order0">
+                    <div class="box order0">Box1 (order: 0)</div>
+                    <div class="box">Box2</div>
+                    <div class="box">Box3</div>
+                    <div class="box">Box4</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>order: 1</h3>
+                </legend>
+                <div class="flex-order1">
+                    <div class="box">Box1</div>
+                    <div class="box">Box2</div>
+                    <div class="box order1">Box3(order: 1)</div>
+                    <div class="box">Box4</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>order: -1</h3>
+                </legend>
+                <div class="flex-order-1">
+                    <div class="box">Box1</div>
+                    <div class="box order-1">Box2(order: -1)</div>
+                    <div class="box">Box3</div>
+                    <div class="box">Box4</div>
+                </div>
+            </fieldset>
+        </fieldset>
+    </fieldset>
+
+    <hr>
+
+    <fieldset>
+        <legend>
+            <h1>Alignment</h1>
+        </legend>
+        <ul>
+            <li>The CSS align-content property sets the distribution of space between and around content items along a
+                flexbox's cross-axis or a grid's block axis.</li>
+        </ul>
+        <fieldset>
+            <legend>
+                <h2>justify-content</h2>
+            </legend>
+            <fieldset>
+                <legend>
+                    <h3>justify-content: flex-start</h3>
+                </legend>
+                <div class="justify-content-flex-start">
+                    <div class="num">One</div>
+                    <div class="num">Two</div>
+                    <div class="num">Three</div>
+                    <div class="num">Four</div>
+                    <div class="num">Five</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>justify-content: flex-end</h3>
+                </legend>
+                <div class="justify-content-flex-end">
+                    <div class="num">One</div>
+                    <div class="num">Two</div>
+                    <div class="num">Three</div>
+                    <div class="num">Four</div>
+                    <div class="num">Five</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>justify-content: center</h3>
+                </legend>
+                <div class="justify-content-center">
+                    <div class="num">One</div>
+                    <div class="num">Two</div>
+                    <div class="num">Three</div>
+                    <div class="num">Four</div>
+                    <div class="num">Five</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>justify-content: space-between</h3>
+                </legend>
+                <div class="justify-content-space-between">
+                    <div class="num">One</div>
+                    <div class="num">Two</div>
+                    <div class="num">Three</div>
+                    <div class="num">Four</div>
+                    <div class="num">Five</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>justify-content: space-around</h3>
+                </legend>
+                <div class="justify-content-space-around">
+                    <div class="num">One</div>
+                    <div class="num">Two</div>
+                    <div class="num">Three</div>
+                    <div class="num">Four</div>
+                    <div class="num">Five</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>justify-content: space-evenly</h3>
+                </legend>
+                <div class="justify-content-space-evenly">
+                    <div class="num">One</div>
+                    <div class="num">Two</div>
+                    <div class="num">Three</div>
+                    <div class="num">Four</div>
+                    <div class="num">Five</div>
+                </div>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>align-items</h2>
+            </legend>
+            <ul>
+                <li>The CSS align-items property sets the align-self value on all direct children as a group. In
+                    Flexbox, it controls the alignment of items on the Cross Axis. In Grid Layout, it controls the
+                    alignment of items on the Block Axis within their grid area.</li>
+            </ul>
+            <fieldset>
+                <legend>
+                    <h3>align-items: stretch</h3>
+                </legend>
+                <div class="align-items-stretch">
+                    <div class="inum">Mercedes-Benz-S-Class
+                    </div>
+                    <div class="inum">Tata-Harrier</div>
+                    <div class="inum">BMW-X7</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>align-items: flex-start</h3>
+                </legend>
+                <div class="align-items-flex-start">
+                    <div class="inum">Mercedes-Benz-S-Class
+                    </div>
+                    <div class="inum">Tata-Harrier</div>
+                    <div class="inum">BMW-X7</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>align-items: flex-end</h3>
+                </legend>
+                <div class="align-items-flex-end">
+                    <div class="inum">Mercedes-Benz-S-Class
+                    </div>
+                    <div class="inum">Tata-Harrier</div>
+                    <div class="inum">BMW-X7</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>align-items: center</h3>
+                </legend>
+                <div class="align-items-center">
+                    <div class="inum">Mercedes-Benz-S-Class
+                    </div>
+                    <div class="inum">Tata-Harrier</div>
+                    <div class="inum">BMW-X7</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>align-items: baseline</h3>
+                </legend>
+                <div class="align-items-baseline">
+                    <div class="inum">Mercedes-Benz-S-Class
+                    </div>
+                    <div class="inum">Tata-Harrier</div>
+                    <div class="inum">BMW-X7</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>align-items: auto</h3>
+                </legend>
+                <div class="align-items-auto">
+                    <div class="inum">Mercedes-Benz-S-Class
+                    </div>
+                    <div class="inum">Tata-Harrier</div>
+                    <div class="inum">BMW-X7</div>
+                </div>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>align-self</h2>
+            </legend>
+            <ul>
+                <li>The align-self CSS property overrides a grid or flex item's align-items value. In Grid, it aligns
+                    the item inside the grid area. In Flexbox, it aligns the item on the cross axis.</li>
+            </ul>
+            <fieldset>
+                <legend>
+                    <h3>align-self: stretch</h3>
+                </legend>
+                <div class="align-self-stretch">
+                    <div class="inum">Mercedes-Benz-S-Class
+                    </div>
+                    <div class="inum">Tata-Harrier</div>
+                    <div class="stretch-child">
+                        <div class="inum">BMW-X7</div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>align-self: flex-start</h3>
+                </legend>
+                <div class="align-self-flex-start">
+                    <div class="inum">Mercedes-Benz-S-Class
+                    </div>
+                    <div class="flex-start-child">
+                        <div class="inum">Tata-Harrier</div>
+                    </div>
+                    <div class="inum">BMW-X7</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>align-self: flex-end</h3>
+                </legend>
+                <div class="align-self-flex-end">
+                    <div class="flex-end-child">
+                        <div class="inum">Mercedes-Benz-S-Class</div>
+                    </div>
+                    <div class="inum">Tata-Harrier</div>
+                    <div class="inum">BMW-X7</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>align-self: center</h3>
+                </legend>
+                <div class="align-self-center">
+                    <div class="inum">Mercedes-Benz-S-Class
+                    </div>
+                    <div class="center-child">
+                        <div class="inum">Tata-Harrier</div>
+                    </div>
+                    <div class="inum">BMW-X7</div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>align-self: baseline</h3>
+                </legend>
+                <div class="align-self-baseline">
+                    <div class="inum">Mercedes-Benz-S-Class
+                    </div>
+                    <div class="inum">Tata-Harrier</div>
+                    <div class="baseline-child">
+                        <div class="inum">BMW-X7</div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>align-self: auto</h3>
+                </legend>
+                <div class="align-self-auto">
+                    <div class="inum">Mercedes-Benz-S-Class
+                    </div>
+                    <div class="auto-child">
+                        <div class="inum">Tata-Harrier</div>
+                    </div>
+                    <div class="inum">BMW-X7</div>
+                </div>
+            </fieldset>
+        </fieldset>
+
+        <hr>
+        <fieldset>
+            <legend>
+                <h1>Flexiblity</h1>
+            </legend>
+            <ul>
+                <li>The CSS flexible box layout module defines a CSS box model optimized for user interface design, and
+                    the layout of items in one dimension. </li>
+            </ul>
+            <fieldset>
+                <legend>
+                    <h2>flex-grow</h2>
+                </legend>
+                <fieldset>
+                    <legend>
+                        <h3>0</h3>
+                    </legend>
+                    <div class="grow-flexible">
+                        <div class="num"><strong> 1</strong></div>
+                        <div class="flex-grow-child0">
+                            <div class="num"><strong> 2</strong></div>
+                        </div>
+                        <div class="num"><strong> 3</strong></div>
+                        <div class="num"><strong> 4</strong></div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <h3>1</h3>
+                    </legend>
+                    <div class="grow-flexible">
+                        <div class="num"><strong> 1</strong></div>
+                        <div class="flex-grow-child1">
+                            <div class="num"><strong> 2</strong></div>
+                        </div>
+                        <div class="num"><strong> 3</strong></div>
+                        <div class="num"><strong> 4</strong></div>
+                    </div>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>flex-shrink</h2>
+                </legend>
+                <fieldset>
+                    <legend>
+                        <h3>0</h3>
+                    </legend>
+                    <div class="shrink-flexible">
+                        <div class="num2"><strong> 1</strong></div>
+                        <div class="num2 flex-shrink-child0"><strong> 2</strong></div>
+                        <div class="num2"><strong> 3</strong></div>
+                        <div class="num2"><strong> 4</strong></div>
+                    </div>
+                </fieldset>
+                <fieldset>
+
+                    <legend>
+                        <h3>1</h3>
+                    </legend>
+                    <div class="shrink-flexible">
+                        <div class="num2"><strong> 1</strong></div>
+                        <div class="num2 flex-shrink-child1"><strong> 2</strong></div>
+                        <div class="num2"><strong> 3</strong></div>
+                        <div class="num2"><strong> 4</strong></div>
+                    </div>
+                </fieldset>
+
+            </fieldset>
+        </fieldset>
+
+    </fieldset>
+
+</body>
+
+</html>
