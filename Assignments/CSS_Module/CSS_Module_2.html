@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Assignment</title>
+    <link rel="stylesheet" href="CSS_Module_style.css">
+    <style>
+        .pclass {
+            color: #009900;
+            font-size: 50px;
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>CSS Module-2</h1>
+        </legend>
+        <fieldset>
+            <legend>
+                <h2>1. What are the benifits of using CSS ?</h2>
+            </legend>
+            <ul>
+                <li><strong>Separation of Content and Style :</strong>Separation of Content and Style. One of the most
+                    significant advantages of CSS is its ability to separate content from presentation.</li>
+                <li><strong>Consistency :</strong>CSS enables consistent styling across an entire website or multiple
+                    pages.</li>
+                <li><strong>Faster Loading Times :</strong>External CSS files can be cached by web browsers, allowing
+                    them to load faster on subsequent visits.</li>
+                <li><strong>Responsive Design :</strong>With CSS, you can create responsive web designs that adapt to
+                    different screen sizes and devices.</li>
+                <li><strong>Ease of Maintenance :</strong>Modifying the appearance of a website is more straightforward
+                    with CSS.</li>
+                <li><strong>Global styling :</strong>External CSS files can be linked to multiple web pages, making it
+                    easy to apply consistent styling across an entire website. </li>
+                <li><strong>Animations and Effects :</strong>CSS allows for animations and transitions, enhancing the
+                    user experience.</li>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>2. What are the disadvantages of CSS? </h2>
+            </legend>
+            <ul>
+                <li><strong>Browser Compatiblity</strong>CSS may render differently in various web browsers, leading to
+                    inconsistencies in the visual presentation.</li>
+                <li><strong>Learning Curve
+                    </strong>One among the main disadvantages of cascading style sheets is that while it is essential
+                    for web development, it can be complex, especially for beginners.</li>
+                <li><strong>Lack of Security</strong>CSS itself does not offer security features, and it can be
+                    vulnerable to attacks like Cross-Site Scripting (XSS) when used inappropriately.</li>
+                <li><strong> Limited Layout Control</strong>CSS has limitations when it comes to controlling complex
+                    layouts.</li>
+                <li><strong>Performance Impact</strong>Extensive or poorly optimized CSS files can slow down page load
+                    times.</li>
+                <li><strong>Maintenance Challenges</strong>As websites grow and evolve, maintaining and refactoring CSS
+                    can become complex and time-consuming.</li>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>3. What is the difference between CSS2 and CSS3?</h2>
+            </legend>
+            <ul>
+
+                <li><strong>Flexbox:</strong>Flexbox is a layout module that makes it easier to create responsive
+                    layouts.
+                </li>
+                <li><strong>Grid:</strong>Grid is a layout module that provides more control over the layout of elements
+                    on
+                    a web page.</li>
+                <li><strong>Animations</strong>CSS3 adds support for animations, which can be used to create more
+                    dynamic
+                    web pages.</li>
+                <li><strong>Transitions: </strong>CSS3 adds support for transitions, which can be used to create smooth
+                    transitions between states of an element.</li>
+                <li><strong>Custom properties:</strong>CSS3 adds support for custom properties, which can be used to
+                    create
+                    reusable styles.</li>
+                <li><strong>Improved support for media queries: </strong>CSS3 improves the support for media queries,
+                    which
+                    can be used to adjust the layout of a web page for different screen sizes.</li>
+                <li><strong>Better performance:</strong> CSS3 code is typically more efficient than CSS2 code, which can
+                    lead to faster page load times.</li>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>4. Name a few CSS style components.</h2>
+            </legend>
+            <fieldset>
+                <legend><strong>
+                        <h2>Types of CSS</h2>
+                    </strong></legend>
+                <ul>
+                    <li>
+
+                        Cascading Style Sheet (CSS) is used to set the style in web pages that contain HTML elements. It
+                        sets
+                        the
+                        background color, font-size, font-family, color, … etc. properties of elements on a web page.
+                    </li>
+                    <br>
+                    <li>
+                        There are three types of CSS which are given below:
+                    </li>
+                    <ul>
+                        <li>
+                            Inline CSS
+                        </li>
+                        <li>
+                            Internal or Embedded CSS
+                        </li>
+                        <li>
+                            External CSS
+                        </li>
+                    </ul>
+                </ul>
+                <fieldset>
+                    <legend>
+                        <h2>1. Inline CSS :</h2>
+                    </legend>
+
+                    <br>
+                    <li>
+                        Inline CSS contains the CSS property in the body section attached to the element is known as
+                        inline CSS.
+                        This kind of style is specified within an HTML tag using the style attribute.
+                    </li>
+                    <br>
+                    <li><strong> Example :</strong>
+                        <br>
+                        <br>
+                        <strong>
+
+                            &lt;p style="color:#009900; font-size:50px;
+                            <br>
+                            &emsp;&emsp;&emsp;&emsp;font-style:italic; text-align:center;"&gt;
+                            <br>
+                            &emsp;&emsp;Inline CSS
+                        </strong>
+                    </li>
+                    <br>
+                    &lt;/p&gt;
+                    <br>
+                    <br>
+                    <strong>Output : </strong>
+                    <br>
+                    <p style="color:#009900; font-size:50px;
+                font-style:italic; text-align:center;">
+                        Inline CSS
+                    </p>
+                    </li>
+                    <br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <br>
+                    <legend>
+                        <h2>2. Internal CSS</h2>
+                    </legend>
+                    <li>
+                        This can be used when a single HTML document must be styled uniquely. The CSS rule set should be
+                        within
+                        the HTML file in the head section i.e. the CSS is embedded within the &lt;style&gt; tag inside
+                        the head
+                        section of the HTML file.
+                    </li>
+                    <br>
+                    <li><strong> Example :</strong>
+                        <strong>
+
+                            <br>
+                            <br>
+                            &lt;style&gt; <br>
+                            &emsp;&emsp; .pclass &lbrace; <br>
+                            &emsp;&emsp;&emsp; font-style: bold; <br>
+                            &emsp;&emsp;&emsp; font-size: 20px; <br>
+                            &emsp;&emsp;&rbrace; <br>
+                            &lt;/style&gt;
+                        </strong>
+                    </li>
+                    <br>
+                    <br>
+                    <strong>Output : </strong>
+                    <br>
+                    <p class="pclass">
+                        Internal CSS
+                    </p>
+                    </li>
+                    <br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <br>
+                    <legend>
+                        <h2>3. External CSS</h2>
+                    </legend>
+                    <li>
+                        External CSS contains separate CSS files that contain only style properties with the help of tag
+                        attributes (For example class, id, heading, … etc). CSS property is written in a separate file
+                        with a
+                        .css extension and should be linked to the HTML document using a link tag. It means that, for
+                        each
+                        element, style can be set only once and will be applied across web pages.
+                    </li>
+                    <li><strong> Example :</strong>
+                        <br>
+                        <br>
+                        <strong>
+                            &lt;style&gt; <br>
+                            &emsp;&emsp; .pclass &lbrace; <br>
+                            &emsp;&emsp;&emsp; font-style: bold; <br>
+                            &emsp;&emsp;&emsp; font-size: 20px; <br>
+                            &emsp;&emsp;&rbrace; <br>
+                            &lt;/style&gt;
+                        </strong>
+                    </li>
+                    <br>
+                    <br>
+                    <strong>Output : </strong>
+                    <br>
+                    <p class="pclass">
+                        External CSS
+                    </p>
+                    </li>
+                    <br>
+                </fieldset>
+            </fieldset>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>5. What do you understand by CSS opacity? </h2>
+            </legend>
+            <ul>
+                <li>The opacity CSS property sets the opacity of an element. Opacity is the degree to which content
+                    behind an element is hidden, and is the opposite of transparency.</li>
+            </ul>
+            <fieldset>
+                <h3>Example :</h3>
+                <p class="font-size">The following div element's opacity is 0.5. Note that both the text and the
+                    background-color are affected by the opacity level:</p>
+
+                <div class="opacity-div font-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper
+                    diam at erat pulvinar, at pulvinar felis blandit...</div>
+
+            </fieldset>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>6. How can the background color of an element be changed?</h2>
+            </legend>
+            <ul>
+                <li>To add background color in HTML, use the CSS background-color property. </li>
+                <li>Set it to the color name or code you want and place it inside a style attribute.</li>
+                <li>Then add this style attribute to an HTML element, like a table, heading, div, or span tag.</li>
+            </ul>
+            <fieldset>
+                <legend>
+                    <h3>Example : </h3>
+                </legend>
+                <div class="bg1">
+                    background color-1
+                </div>
+                <div class="bg2">
+                    background color-2
+                </div>
+                <div class="bg3">
+                    background color-3
+                </div>
+            </fieldset>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>7. How can image repetition of the backup be controlled?</h2>
+            </legend>
+            <ul>
+                <li>This task can be achieved by using the background-repeat property that will help us to control the
+                    repetition of the image.</li>
+                <li>The background-repeat property in CSS is used to repeat the background image both horizontally and
+                    vertically. </li>
+                <li>It also decides whether the background image will be repeated or not.</li>
+                <fieldset>
+                    <legend>
+                        <h3>Example-1 : repeat-x</h3>
+                    </legend>
+                    <div class="img-x">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <h3>Example-2 : repeat-y</h3>
+                    </legend>
+                    <div class="img-y">
+                    </div>
+                </fieldset>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>8. What is the use of the background-position property? </h2>
+            </legend>
+            <ul>
+                <li>The background-position property sets the starting position of a background image.</li>
+                <li>By default, a background-image is placed at the top-left corner of an element, and repeated both
+                    vertically and horizontally.</li>
+                <li>The background-position CSS property sets the initial position for each background image.</li>
+                <li>The position is relative to the position layer set by background-origin.</li>
+                <li>Background positions :
+                    <ul>
+                        <li>Top</li>
+                        <li>Bottom</li>
+                        <li>Left</li>
+                        <li>Right</li>
+                        <li>Center</li>
+                    </ul>
+                </li>
+                <fieldset>
+                    <legend>
+                        <h3>Example: background-position: center;</h3>
+                    </legend>
+                    <div class="bg-position">
+                    </div>
+                </fieldset>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>9. Which property controls the image scroll in the background? </h2>
+            </legend>
+            <ul>
+                <li>The background image will scroll with the page. This is default</li>
+            </ul>
+            <fieldset>
+                <legend>
+                    <h3>Example: background-attachment: scroll;</h3>
+                </legend>
+                <div class="bg-scroll">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi pariatur rerum officiis hic tempora
+                    aliquam, voluptates cum dignissimos accusantium ducimus, optio et natus dolorum minima, a qui
+                    maiores ad repellendus quibusdam cumque nostrum doloremque maxime! Nobis, laudantium cumque
+                    reiciendis a sunt sint rerum numquam obcaecati nesciunt nemo voluptas architecto deserunt amet
+                    asperiores, dolorem deleniti explicabo delectus vero sequi eaque. Architecto quasi dolor neque ipsa
+                    in nisi est vero unde incidunt sit, inventore quas. Eos asperiores pariatur tenetur placeat soluta,
+                    perspiciatis ullam voluptates delectus sequi nemo optio. Illum, ullam odio dolor iste ducimus natus
+                    culpa tempora repellat officia aut nihil nisi eos optio ipsum aliquam nobis necessitatibus excepturi
+                    earum, repellendus molestias praesentium magnam alias. Sit, impedit. Alias voluptatibus sed
+                    veritatis, cumque ducimus velit!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi pariatur rerum officiis hic tempora
+                    aliquam, voluptates cum dignissimos accusantium ducimus, optio et natus dolorum minima, a qui
+                    maiores ad repellendus quibusdam cumque nostrum doloremque maxime! Nobis, laudantium cumque
+                    reiciendis a sunt sint rerum numquam obcaecati nesciunt nemo voluptas architecto deserunt amet
+                    asperiores, dolorem deleniti explicabo delectus vero sequi eaque. Architecto quasi dolor neque ipsa
+                    in nisi est vero unde incidunt sit, inventore quas. Eos asperiores pariatur tenetur placeat soluta,
+                    perspiciatis ullam voluptates delectus sequi nemo optio. Illum, ullam odio dolor iste ducimus natus
+                    culpa tempora repellat officia aut nihil nisi eos optio ipsum aliquam nobis necessitatibus excepturi
+                    earum, repellendus molestias praesentium magnam alias. Sit, impedit. Alias voluptatibus sed
+                    veritatis, cumque ducimus velit!
+                </div>
+            </fieldset>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>10. Why should background and color be used as separate properties?</h2>
+            </legend>
+            <ul>
+                <li>There are two reasons behind this: </li>
+                <li>It enhances the legibility of style sheets.</li>
+                <li>The background property is a complex property in CSS, and if it is combined with color, the
+                    complexity will further increase.</li>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>11. How to center block elements using CSS1?</h2>
+            </legend>
+            <ul>
+                <li>Sometimes it is not the text that needs to be centered, but the block as a whole. </li>
+                <li>Or, phrased differently: we want the left and right margin to be equal. </li>
+                <li>The way to do that is to set the margins to 'auto'. </li>
+                <li>This is normally used with a block of fixed width, because if the block itself is flexible, it will
+                    simply take up all the available width.</li>
+                <li>Here is an example:</li>
+            </ul>
+            <fieldset>
+                <legend>
+                    <h3>Example:</h3>
+                </legend>
+                <div class="block-element">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolorum explicabo eos officiis
+                        atque soluta reprehenderit quas vitae alias quos sed odit debitis impedit eius iste nostrum
+                        quibusdam, temporibus nemo expedita harum. Ut, debitis.</p>
+                </div>
+            </fieldset>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>12. How to maintain the CSS specifications?</h2>
+            </legend>
+            <ul>
+                <li>The syntax and data types of the language</li>
+                <li>Detailed explanation on CSS Selectors</li>
+                <li>How you can assign values to properties</li>
+                <li>The Cascade (the "C" in CSS)</li>
+                <li>How inheritance works</li>
+                <li>The Box Model e.t.c</li>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>13. What are the ways to integrate CSS as a web page?</h2>
+            </legend>
+            <ol>
+                <li>
+                    <h3>Three Ways to Insert CSS</h3>
+                    <ol>
+                        <li style="list-style: decimal;">Inline CSS</li>
+                        <li>Internal CSS</li>
+                        <li>External CSS</li>
+                    </ol>
+                <li>
+                    <h3>Inline CSS:</h3>
+                    <ul>
+                        <li>An inline style may be used to apply a unique style for a single element.</li>
+                        <li>To use inline styles, add the style attribute to the relevant element.</li>
+                        <li>ne styles are defined within the "style" attribute of the relevant element:</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Internal CSS:</h3>
+                    <ul>
+                        <li>An internal style sheet may be used if one single HTML page has a unique style.</li>
+                        <li>The internal style is defined inside the &lt;style&gt; element, inside the head section.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>External CSS:</h3>
+                    <ul>
+                        <li>With an external style sheet, you can change the look of an entire website by changing just
+                            one file!</li>
+                        <li>Each HTML page must include a reference to the external style sheet file inside the
+                            &lt;link&gt; element, inside the head section.</li>
+                        <li>n external style sheet can be written in any text editor, and must be saved with a .css
+                            extension.</li>
+                        <li>The external .css file should not contain any HTML tags.</li>
+                    </ul>
+                </li>
+                </li>
+            </ol>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend><h2>14. What is embedded style sheets? </h2></legend>
+            <ul>
+                <li>It allows you to define styles for a particular HTML document as a whole in one place. </li>
+                <li>This is done by embedding the &lt;style&gt;&lt;/style&gt; tags containing the CSS properties in the head of your document.</li>
+                <li> Embedded style sheets are particularly useful for HTML documents that have unique style requirements from the rest of the documents in your project. </li>
+                <li>However, if the styles need to be applied across multiple documents, you should link to an external style sheet instead of using individual embedded style sheets.</li>
+                <li>Using embedded stylesheets holds a distinct advantage over inline styles which only allow you to address one HTML element at a time. </li>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>
+                <h2>15. What are the external style sheets?</h2>
+            </legend>
+                <ul>
+                    <li>With an external style sheet, you can change the look of an entire website by changing just one file!</li>
+                    <li>Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.</li>
+                    <li>External styles are defined within the  &lt;link&gt; element, inside the  &lt;head&gt; section of an HTML page:</li>
+                    <li>An external style sheet can be written in any text editor, and must be saved with a .css extension.</li>
+                    <li>The external .css file should not contain any HTML tags.</li>
+                </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend><h2>16. What are the advantages and disadvantages of using external style sheets? </h2></legend>
+            <fieldset>
+                <legend><h3>Advantages :</h3></legend>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Disadvantages :</legend>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </fieldset>
+        </fieldset>
+    </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+.font-size {
+    font-size: 18px;
+}
+
+li {
+    font-size: 18px;
+}
+
+hr {
+    width: 70%;
+    height: 3px;
+    background-color: black;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    list-style: disc;
+}
+
+/* answer-4 */
+.opacity-div {
+    background-color: forestgreen;
+    opacity: 0.5;
+}
+
+/* answer-5 */
+.pclass {
+    font-style: bold;
+    font-size: 20px;
+}
+
+/* Answer-6 */
+.bg1 {
+    background-color: green;
+    margin: 50px 50px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.bg2 {
+    background-color: rgb(163, 158, 158);
+    color: black;
+    margin: 50px 50px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.bg3 {
+    background-color: rgb(102, 119, 102);
+    margin: 50px 50px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* answer-7 */
+.img-x {
+    width: 100%;
+    height: 300px;
+    background-image: url(ict.svg);
+    background-repeat: repeat-x;
+}
+
+.img-y {
+    width: 300px;
+    height: 900px;
+    background-image: url(ict.svg);
+    background-repeat: repeat-y;
+}
+
+/* answer-8 */
+.bg-position {
+    background-image: url(star.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    height: 420px;
+    width: 520px;
+}
+
+/* answer-9 */
+.bg-scroll {
+    background-image: url(ict.svg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 40%;
+
+}
+
+/*answer-11 */
+.block-element p {
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block-element {
+    border: 1px solid black;
+
+}
+
+ol li:nth-child(1) {
+    list-style: disc;
+}
