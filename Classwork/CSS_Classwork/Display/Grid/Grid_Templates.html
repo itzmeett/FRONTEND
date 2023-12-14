@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Templates</title>
+    <style>
+        ul li{
+            list-style: disc;
+        }
+
+        #page {
+  display: grid;
+  width: 100%;
+  height: 200px;
+  grid-template:
+    [header-left] "head head" 30px [header-right]
+    [main-left] "nav  main" 1fr [main-right]
+    [footer-left] "nav  foot" 30px [footer-right]
+    / 120px 1fr;
+}
+
+header {
+  background-color:lightslategray;
+  grid-area: head;
+}
+
+nav {
+  background-color: forestgreen;
+  grid-area: nav;
+}
+
+main {
+  background-color: rgba(255, 255, 0, 0.676);
+  grid-area: main;
+}
+
+footer {
+  background-color: lightcoral;
+  grid-area: foot;
+}
+
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Grid Templates</h1></legend>
+        <ul>
+            <li>
+                The grid-template-areas CSS property specifies named grid areas, establishing the cells in the grid and assigning them names.
+            </li>
+            <li>The grid-template property is a shorthand property for the following properties:
+                <ul>
+                    <li>grid-template-rows</li>
+                    <li>grid-template-columns</li>
+                    <li>grid-template-areas</li>
+                </ul>
+            </li>
+        </ul>
+        <fieldset>
+            <legend><h2>Example</h2></legend>
+            <section id="page">
+                <header>Header</header>
+                <nav>Navigation</nav>
+                <main>Main area</main>
+                <footer>Footer</footer>
+              </section>
+              
+        </fieldset>
+    </fieldset>
+</body>
+</html>
