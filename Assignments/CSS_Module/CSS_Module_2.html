@@ -468,13 +468,19 @@
         </fieldset>
         <hr>
         <fieldset>
-            <legend><h2>14. What is embedded style sheets? </h2></legend>
+            <legend>
+                <h2>14. What is embedded style sheets? </h2>
+            </legend>
             <ul>
                 <li>It allows you to define styles for a particular HTML document as a whole in one place. </li>
-                <li>This is done by embedding the &lt;style&gt;&lt;/style&gt; tags containing the CSS properties in the head of your document.</li>
-                <li> Embedded style sheets are particularly useful for HTML documents that have unique style requirements from the rest of the documents in your project. </li>
-                <li>However, if the styles need to be applied across multiple documents, you should link to an external style sheet instead of using individual embedded style sheets.</li>
-                <li>Using embedded stylesheets holds a distinct advantage over inline styles which only allow you to address one HTML element at a time. </li>
+                <li>This is done by embedding the &lt;style&gt;&lt;/style&gt; tags containing the CSS properties in the
+                    head of your document.</li>
+                <li> Embedded style sheets are particularly useful for HTML documents that have unique style
+                    requirements from the rest of the documents in your project. </li>
+                <li>However, if the styles need to be applied across multiple documents, you should link to an external
+                    style sheet instead of using individual embedded style sheets.</li>
+                <li>Using embedded stylesheets holds a distinct advantage over inline styles which only allow you to
+                    address one HTML element at a time. </li>
             </ul>
         </fieldset>
         <hr>
@@ -482,37 +488,143 @@
             <legend>
                 <h2>15. What are the external style sheets?</h2>
             </legend>
-                <ul>
-                    <li>With an external style sheet, you can change the look of an entire website by changing just one file!</li>
-                    <li>Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.</li>
-                    <li>External styles are defined within the  &lt;link&gt; element, inside the  &lt;head&gt; section of an HTML page:</li>
-                    <li>An external style sheet can be written in any text editor, and must be saved with a .css extension.</li>
-                    <li>The external .css file should not contain any HTML tags.</li>
-                </ul>
+            <ul>
+                <li>With an external style sheet, you can change the look of an entire website by changing just one
+                    file!</li>
+                <li>Each HTML page must include a reference to the external style sheet file inside the
+                    <link> element, inside the head section.
+                </li>
+                <li>External styles are defined within the &lt;link&gt; element, inside the &lt;head&gt; section of an
+                    HTML page:</li>
+                <li>An external style sheet can be written in any text editor, and must be saved with a .css extension.
+                </li>
+                <li>The external .css file should not contain any HTML tags.</li>
+            </ul>
         </fieldset>
         <hr>
         <fieldset>
-            <legend><h2>16. What are the advantages and disadvantages of using external style sheets? </h2></legend>
+            <legend>
+                <h2>16. What are the advantages and disadvantages of using external style sheets? </h2>
+            </legend>
             <fieldset>
-                <legend><h3>Advantages :</h3></legend>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+                <legend>
+                    <h3>Advantages :</h3>
+                </legend>
+                <ul>
+                    <li>one change to the style sheet will change all linked pages</li>
+                    <li>you can create classes of styles that can then be used on many different HTML elements</li>
+                    <li>consistent look and feel across multiple web pages</li>
+                    <li>improved load times because the css file is downloaded once and applied to each relevant page as needed</li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend><h3>Disadvantages :</h3></legend>
+                <ul>
+                    <li>Your pages may not be rendered correctly until the external CSS is loaded.</li>
+                    <li>Uploading or linking to multiple CSS files can increase your site's download time.</li>
+                    <li>The execution of the file may be deferred till the external style sheet is loaded.</li>
+                </ul>
+            </fieldset>
         </fieldset>
+        <hr>
         <fieldset>
-            <legend>Disadvantages :</legend>
+            <legend><h2>17. What is the meaning of the CSS selector?</h2></legend>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li> It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them.</li>
+                <li>CSS selectors are used to "find" (or select) the HTML elements you want to style.</li>
+                <li>We can divide CSS selectors into five categories:
+                    <ul>
+                        <li>Simple selectors (select elements based on name, id, class)</li>
+                        <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+                        <li>Pseudo-class selectors (select elements based on a certain state)</li>
+                        <li>Pseudo-elements selectors (select and style a part of an element)</li>
+                        <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+                    </ul>
+                </li>
             </ul>
         </fieldset>
+        <hr>
+        <fieldset>
+            <legend><h2>18. What are the media types allowed by CSS?</h2></legend>
+            <ul>
+                <li>The @media CSS at-rule can be used to apply part of a style sheet based on the result of one or more media queries.</li>
+                <li>you specify a media query and a block of CSS to apply to the document if and only if the media query matches the device on which the content is being used.</li>
+                <li><strong>Examples:</strong>  You could have one set of style rules for computer screens, one for printers, one for handheld devices, one for television-type devices, and so on.</li>
+                <li>Media queries can be used to check many things, such as:
+                    <ul>
+                        <li>width and height of the viewport</li>
+                        <li>width and height of the device</li>
+                        <li>orientation (is the tablet/phone in landscape or portrait mode?)</li>
+                        <li>resolution</li>
+                    </ul>
+                </li>
+            </ul>
+        </fieldset>
+        <hr>
+        <fieldset><legend><h2>19. What is the rule set? </h2></legend>
+        <ul>
+            <li>A rule or "rule set" is a statement that tells browsers how to render particular elements on an HTML page.</li>
+            <li>A rule set consists of a selector followed by a declaration</li>
+        </ul>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend><h2>20. Create Layouts</h2></legend>
+            <div class="parent">
+                <div class="row">
+                    <div class="child">
+                        <div class="thumbnail">
+                            Thumbnail
+                        </div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, deserunt? Cumque quia officia soluta fuga eligendi assumenda dolor veniam. Doloribus, quasi nam!
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                    </div>
+                    <div class="child"><div class="thumbnail">
+                            Thumbnail
+                        </div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, deserunt? Cumque quia officia soluta fuga eligendi assumenda dolor veniam. Doloribus, quasi nam!
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div></div>
+                    <div class="child"><div class="thumbnail">
+                            Thumbnail
+                        </div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, deserunt? Cumque quia officia soluta fuga eligendi assumenda dolor veniam. Doloribus, quasi nam!
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div></div>
+                    <div class="child"><div class="thumbnail">
+                            Thumbnail
+                        </div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, deserunt? Cumque quia officia soluta fuga eligendi assumenda dolor veniam. Doloribus, quasi nam!
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div></div>
+                    <div class="child"><div class="thumbnail">
+                            Thumbnail
+                        </div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, deserunt? Cumque quia officia soluta fuga eligendi assumenda dolor veniam. Doloribus, quasi nam!
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div></div>
+                    <div class="child"><div class="thumbnail">
+                            Thumbnail
+                        </div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, deserunt? Cumque quia officia soluta fuga eligendi assumenda dolor veniam. Doloribus, quasi nam!
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div></div>
+                </div>
+
+            </div>
         </fieldset>
     </fieldset>
 </body>

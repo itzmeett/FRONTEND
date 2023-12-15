@@ -57,20 +57,20 @@ ul li {
 .img-x {
     width: 100%;
     height: 300px;
-    background-image: url(ict.svg);
+    background-image: url(Images/ict.svg);
     background-repeat: repeat-x;
 }
 
 .img-y {
     width: 300px;
     height: 900px;
-    background-image: url(ict.svg);
+    background-image: url(Images/ict.svg);
     background-repeat: repeat-y;
 }
 
 /* answer-8 */
 .bg-position {
-    background-image: url(star.jpeg);
+    background-image: url(Images/star.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     border: 1px solid black;
@@ -80,7 +80,7 @@ ul li {
 
 /* answer-9 */
 .bg-scroll {
-    background-image: url(ict.svg);
+    background-image: url(Images/ict.svg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     width: 40%;
@@ -101,4 +101,42 @@ ul li {
 
 ol li:nth-child(1) {
     list-style: disc;
+}
+
+/* answer-20 */
+.parent{
+    width: 1200px;
+    height: 602px;
+    border: solid 1px black;
+    flex-direction: row;
+    margin: 0 120px;
+    flex-wrap: wrap;
+    background-color: rgb(219, 219, 219);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 72px;
+    
+}
+
+.child{
+    width: 322px;
+    height: 270px;
+    border: solid 1px black;
+    margin: 14px 14px;
+    background-color: white;
+}
+
+.thumbnail{
+    padding: 60px;
+    background-color: rgb(78, 77, 77);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    margin: 20px;
 }
