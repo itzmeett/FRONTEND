@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .A{
+            width: 200px;
+            height: 70px;
+            background-color: lightyellow;
+            border: 1px solid;
+            overflow: visible;
+        }
+        .B{
+            width: 200px;
+            height: 70px;
+            background-color: lightyellow;
+            border: 1px solid;
+            overflow: hidden;
+        }
+        .C{
+            width: 200px;
+            height: 70px;
+            background-color: lightyellow;
+            border: 1px solid;
+            overflow: scroll;
+            overflow-y:scroll ;
+        }
+        .D{
+            width: 200px;
+            height: 70px;
+            background-color: lightyellow;
+            border: 1px solid;
+            overflow: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>CSS Overflow</h2>
+    <p>The CSS overflow property controls what happens to content that is too big to fit into an area.</p>
+    <p>The overflow property has the following values:</p>
+    <ul>
+        <li>visible - Default. The overflow is not clipped. The content renders outside the element's box</li>
+        <li>hidden - The overflow is clipped, and the rest of the content will be invisible</li>
+        <li>scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content</li>
+        <li>auto - Similar to scroll, but it adds scrollbars only when necessary</li>
+    </ul>
+    <P>For Example:</P>
+
+    <h3>Overflow: visible</h3>
+    <p class="A">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda excepturi voluptatum, quaerat minus officia quia doloremque explicabo odio esse nostrum ipsam sit neque quam. Totam cumque reiciendis fugit at dolorem?</p><br><br><br><br>
+    <h3>Overflow: hidden</h3>
+    <p class="B">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime perspiciatis vero quibusdam eaque voluptatibus! Culpa, deleniti error totam non distinctio minus ea temporibus voluptatibus fugit soluta nesciunt maxime aliquid aspernatur.</p>
+    <br><br><br>
+    <h3>Overflow: scroll</h3>
+    <p class="C">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos error vel alias nihil cupiditate cumque, corrupti adipisci, mollitia minima eum repellendus sed qui et architecto facere eaque aliquam dolorem? Id.</p>
+    <br><br><br>
+    <h3>Overflow: auto</h3>
+    <p class="D">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ducimus recusandae quaerat. Quae incidunt rem obcaecati delectus nisi. Placeat praesentium culpa aut libero incidunt veniam deserunt expedita asperiores temporibus aperiam?</p>
+</body>
+</html>

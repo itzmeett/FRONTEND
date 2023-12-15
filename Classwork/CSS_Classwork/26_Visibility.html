@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2.a {
+            visibility: visible;
+        }
+
+        h2.b {
+            visibility: hidden;
+        }
+
+        table,
+        td {
+            border: 1px solid black;
+        }
+
+        tr.collapse:hover{
+            visibility: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Visibilty</h2>
+    <p>The visibility CSS property shows or hides an element without changing the layout of a document. The property can
+        also hide rows or columns in a table</p>
+
+    <h2 class="a">This heading is visible</h2>
+    before hidden
+    <h2 class="b">This heading is hidden</h2>
+    after hidden
+    <p>Notice that the hidden heading still takes up space on the page.</p>
+
+    <table>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr class="collapse">
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+    <p>hover on the table to collapse the row .</p>
+</body>
+
+</html>
