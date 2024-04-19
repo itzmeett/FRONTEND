@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module_3</title>
+</head>
+
+<body>
+    <h2>1. What are the new tags added in HTML5?</h2>
+    <p>
+        HTML5 introduced several new elements and attributes to enhance the structure and semantics of web documents.
+        Some of the notable new tags added in HTML5 include:</p>
+    <ul>
+        <li>&lt;header&gt;: Represents introductory content at the beginning of a section or page.</li>
+        <li>&lt;nav&gt;: Defines a section containing navigation links.</li>
+        <li>&lt;section&gt;: Represents a generic section of a document or application.</li>
+        <li>&lt;article&gt;: Defines an independent piece of content that can stand alone.</li>
+        <li>&lt;aside&gt;: Represents content that is tangentially related to the content around it.</li>
+        <li>&lt;footer&gt;: Defines a footer for a section or page.</li>
+        <li>&lt;figure&gt;: Represents self-contained content, such as images, diagrams, photos, code listings, etc.
+        </li>
+        <li>&lt;figcaption&gt;: Provides a caption or legend for a figure element.</li>
+        <li>&lt;main&gt;: Specifies the main content of a document or application.</li>
+        <li>&lt;video&gt;: Embeds a video into an HTML document.</li>
+        <li>&lt;audio&gt;: Embeds audio content into an HTML document.</li>
+        <li>&lt;canvas&gt;: Provides a space on which you can draw graphics and animations via scripting (usually
+            JavaScript).</li>
+        <li>&lt;progress&gt;: Represents the progress of a task, typically displayed as a progress bar.</li>
+        <li>&lt;meter&gt;: Represents a scalar measurement within a known range.</li>
+        <li>&lt;datalist&gt;: Contains a set of &lt;option&gt; elements that represent the values available for other
+            controls.</li>
+        <li>&lt;details&gt;: Represents a disclosure widget from which the user can obtain additional information or
+            controls.</li>
+        <li>&lt;summary&gt;: Defines a summary, caption, or legend for a &lt;details&gt; element.</li>
+        <li>&lt;time&gt;: Represents a specific period in time or a range of time.</li>
+        <li>&lt;dialog&gt;: Defines a dialog box or window.</li>
+    </ul>
+
+    <h2>2. How to embed audio and video in a webpage?</h2>
+    <p>To embed audio and video in a webpage using HTML5, you can use the <audio> and <video> elements, respectively.
+                Here's how you can do it:</p>
+    <h3>Embedding Audio:</h3>
+    <pre>
+&lt;audio controls&gt;
+    &lt;source src="audio-file.mp3" type="audio/mpeg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;
+        </pre>
+
+    <ul>
+        <li>The controls attribute adds playback controls to the audio player.</li>
+        <li>The &lt;source&gt; element specifies the audio file's source and its MIME type. You can include multiple
+            &lt;source&gt; elements for different audio formats to ensure compatibility with various browsers.</li>
+    </ul>
+    <h3>Embedding Video:</h3>
+    <pre>
+        &lt;video controls width="640" height="360"&gt;
+            &lt;source src="video-file.mp4" type="video/mp4"&gt;
+            Your browser does not support the video element.
+          &lt;/video&gt;
+    </pre>
+    <ul>
+        <li>The controls attribute adds playback controls to the video player.</li>
+        <li>The width and height attributes specify the dimensions of the video player.</li>
+        <li>Similar to the audio element, the
+            <source> element within the video element specifies the video file's source and its MIME type. You can
+            include multiple
+            <source> elements for different video formats.
+        </li>
+    </ul>
+
+    <h2>3. Semantic element in HTML5 ?</h2>
+    <p>HTML5 introduced several semantic elements that provide more meaningful structure to web documents, making them more accessible to both humans and machines. Here are some of the key semantic elements in HTML5:</p>
+    <ul>
+            <li>&lt;header&gt;: Represents introductory content at the beginning of a section or page.</li>
+            <li>&lt;nav&gt;: Defines a section containing navigation links.</li>
+            <li>&lt;section&gt;: Represents a generic section of a document or application.</li>
+            <li>&lt;article&gt;: Defines an independent piece of content that can stand alone.</li>
+            <li>&lt;aside&gt;: Represents content that is tangentially related to the content around it.</li>
+            <li>&lt;footer&gt;: Defines a footer for a section or page.</li>
+            <li>&lt;main&gt;: Specifies the main content of a document or application.</li>
+            <li>&lt;figure&gt;: Represents self-contained content, such as images, diagrams, photos, code listings, etc.</li>
+            <li>&lt;figcaption&gt;: Provides a caption or legend for a figure element.</li>
+            <li>&lt;details&gt;: Represents a disclosure widget from which the user can obtain additional information or controls.</li>
+            <li>&lt;summary&gt;: Defines a summary, caption, or legend for a <details> element.</li>
+            <li>&lt;time&gt;: Represents a specific period in time or a range of time.</li>
+            <li>&lt;mark&gt;: Highlights or annotates parts of the text.</li>
+            <li>&lt;meter&gt;: Represents a scalar measurement within a known range.</li>
+            <li>&lt;progress&gt;: Represents the progress of a task, typically displayed as a progress bar.</li>
+            <li>&lt;dialog&gt;: Defines a dialog box or window.</li>
+    </ul>
+    <h2>4. Canvas and SVG tags.</h2>
+    <p>The &lt;canvas&gt; and &lt;svg&gt; tags are both used for creating graphics and visual content in HTML5, but they have different underlying technologies and use cases:</p>
+    <h3>&lt;canvas&gt; Element:</h3>
+    <p>The &lt;canvas&gt; element provides a drawing surface that you can use with JavaScript to dynamically generate and manipulate graphics, such as drawings, animations, and interactive content. It allows for pixel-based rendering and is well-suited for tasks that require real-time rendering or complex animations.</p>
+    <ul>
+        <li><b>Example: </b> &lt;canvas id="myCanvas" width="400" height="200"&gt;&lt;/canvas&gt;</li>
+    </ul>
+    <h3>&lt;svg&gt; Element:</h3>
+    <p>The &lt;svg&gt; (Scalable Vector Graphics) element is a XML-based markup language for describing vector graphics. It's ideal for creating scalable, resolution-independent graphics, such as icons, logos, charts, and illustrations. Unlike the &lt;canvas&gt;, SVG elements are part of the DOM (Document Object Model), making them easier to manipulate with CSS and JavaScript.</p>
+    
+    <ul>
+        <li><b>Example :</b>&lt;svg width="400" height="200"&gt;
+            &lt;circle cx="100" cy="100" r="50" fill="red" /&gt;
+          &lt;/svg&gt;
+          </li>
+    </ul>
+</body>
+
+</html>
